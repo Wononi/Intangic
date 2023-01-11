@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background: #000;
+  position: relative;
+}
+
+.sphere__background {
+  content: '';
+  width: 755px;
+  height: 899px;
+  mix-blend-mode: normal;
+  filter: blur(130px);
+  position: absolute;
+  right: 0;
+  top: -240px;
+  z-index: -1;
+  background: rgb(47, 90, 242);
+  background: linear-gradient(180deg, rgba(47, 90, 242, 0.3) 0%, rgba(112, 97, 163, 0.7) 20%, rgba(245, 138, 37, 0.2) 100%);
+
+  @media (max-width: 1039px) {
+    width: 542px;
+    height: 744px;
+  }
+}
+
+@import "header";
+@import "home";
+@import "footer";
