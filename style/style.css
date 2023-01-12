@@ -473,8 +473,12 @@ main.home__block {
 
   .second__content__block {
     padding-bottom: 62px; }
+    .second__content__block h2 {
+      padding-left: 20px;
+      padding-right: 20px; }
     .second__content__block p {
-      margin-bottom: 40px; }
+      margin-bottom: 40px;
+      padding: 0 20px; }
     .second__content__block svg {
       width: 100%;
       height: auto;

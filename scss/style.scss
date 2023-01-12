@@ -86,7 +86,8 @@ body {
     right: 0;
     top: 756px;
     background: rgb(47,90,242);
-    background: linear-gradient(180deg, rgba(47,90,242,0.4) 0%, rgba(112,97,163,0.9) 20%, rgba(245,138,37,0.4) 100%);    mix-blend-mode: normal;
+    background: linear-gradient(180deg, rgba(47,90,242,0.4) 0%, rgba(112,97,163,0.9) 20%, rgba(245,138,37,0.4) 100%);
+    mix-blend-mode: normal;
     filter: blur(130px);
     z-index: -1;
   }
@@ -140,7 +141,8 @@ body {
     right: 0;
     top: -45px;
     background: rgb(47,90,242);
-    background: linear-gradient(180deg, rgba(47,90,242,0.6) 0%, rgba(112,97,163,0.9) 50%, rgba(245,138,37,0.4) 100%);    mix-blend-mode: normal;
+    background: linear-gradient(180deg, rgba(47,90,242,0.6) 0%, rgba(112,97,163,0.9) 50%, rgba(245,138,37,0.4) 100%);
+    mix-blend-mode: normal;
     filter: blur(130px);
     z-index: -1;
   }
