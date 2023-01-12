@@ -8,8 +8,11 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 body {
-  background: #000;
   position: relative;
 }
 
@@ -34,4 +37,7 @@ body {
 
 @import "header";
 @import "home";
+@import "coverage";
+@import "company";
+@import "download";
 @import "footer";

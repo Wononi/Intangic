@@ -1,0 +1,402 @@
+.compony__block {
+  margin-top: 127px;
+
+  .data__science {
+    margin-bottom: 157px;
+
+    h1 {
+      font-family: 'Commissioner';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 110%;
+      text-align: center;
+      letter-spacing: -0.02em;
+      color: #FFFFFF;
+      max-width: 890px;
+      margin: 0 auto 85px auto;
+    }
+
+    &-wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column-gap: 16px;
+      margin: 0 70px;
+
+      &__item {
+        background: #27222A;
+        border-radius: 16px;
+        padding: 23px 48px 61px 48px;
+
+        .h2-heading {
+          display: block;
+          margin: 22px 0 24px 0;
+          font-family: 'Commissioner';
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 120%;
+          display: flex;
+          align-items: center;
+          letter-spacing: -0.02em;
+          color: #FFFFFF;
+        }
+
+        &-text {
+          display: block;
+          font-family: 'Commissioner';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 140%;
+          color: #83848A;
+
+          &:nth-child(3) {
+            margin-bottom: 25px;
+          }
+        }
+
+        &:nth-child(3) {
+          position: relative;
+        }
+
+        &-icon {
+          background: #00008F;
+          border-radius: 0px 0px 16px 16px;
+          position: absolute;
+          width: 100%;
+          padding: 36px 0 36px 48px;
+          left: 0;
+          bottom: 0;
+        }
+      }
+    }
+  }
+
+  .company__employees {
+    margin-bottom: 441px;
+
+    &-founder {
+      margin-bottom: 129px;
+
+      blockquote {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #FFFFFF;
+        max-width: 900px;
+        margin: 0 auto;
+        margin-bottom: 41px;
+      }
+
+      figcaption {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.3846px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        width: fit-content;
+        margin: 0 auto;
+      }
+
+      p.post {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: rgba(254, 254, 254, 0.6);
+        opacity: 0.3;
+        width: fit-content;
+        margin: 0 auto;
+      }
+    }
+
+    &-executive__team {
+      margin-bottom: 86px;
+
+      h3 {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #F6F6F6;
+        width: fit-content;
+        margin: 0 auto 40px auto;
+      }
+
+      &-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: 0 220px;
+        grid-column-gap: 16px;
+
+        &__item {
+          background: #27222A;
+          border-radius: 16px;
+          padding: 40px;
+
+          &-info {
+            display: flex;
+            column-gap: 21px;
+            align-items: center;
+            margin-bottom: 101px;
+
+            &__name {
+              h4 {
+                font-family: 'JetBrains Mono';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 19.3846px;
+                line-height: 140%;
+                letter-spacing: 0.04em;
+                text-transform: uppercase;
+                color: #FFFFFF;
+              }
+
+              p {
+                font-family: 'Commissioner';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                color: rgba(254, 254, 254, 0.6);
+                opacity: 0.3;
+              }
+            }
+          }
+
+          &-text {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            display: flex;
+            align-items: flex-end;
+            color: #83848A;
+          }
+        }
+      }
+    }
+
+    &-advisors__and__directors {
+      h3 {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 120%;
+        text-align: center;
+        letter-spacing: -0.02em;
+        color: #F6F6F6;
+        width: fit-content;
+        margin: 0 auto 40px auto;
+      }
+
+      &-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 16px;
+        margin: 0 220px;
+
+        &__item {
+          background: #27222A;
+          border-radius: 16px;
+          padding: 32px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h4 {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19.3846px;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+          }
+
+          p.post {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 140%;
+            color: rgba(254, 254, 254, 0.6);
+            opacity: 0.3;
+            margin-bottom: 110px;
+          }
+
+          p.text {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 140%;
+            display: flex;
+            align-items: flex-end;
+            color: #83848A;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  .compony__block {
+    .company__employees {
+      margin-bottom: 330px;
+
+      &-executive__team {
+        &-wrapper {
+          margin: 0 70px;
+        }
+      }
+
+      &-advisors__and__directors {
+        &-wrapper {
+          margin: 0 70px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .compony__block {
+    .data__science {
+      h1 {
+        font-size: 39px;
+        padding: 0 10px;
+      }
+
+      &-wrapper {
+        grid-template-columns: 1fr;
+        grid-row-gap: 9px;
+
+        &__item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          row-gap: 29px;
+
+          &:nth-child(1) {
+            order: 3;
+          }
+
+          &:nth-child(2) {
+            order: 2;
+          }
+
+          &:nth-child(3) {
+            order: 1;
+          }
+
+          &-text:nth-child(3) {
+            margin: 0;
+          }
+
+          &-icon {
+            background: none;
+            border: none;
+            position: static;
+            width: auto;
+            padding: 0;
+          }
+        }
+      }
+    }
+
+    .company__employees {
+      margin-bottom: 180px;
+      &-founder {
+        blockquote {
+          padding: 0 10px;
+          font-size: 24px;
+        }
+      }
+
+      &-executive__team {
+        h3 {
+          font-size: 26px;
+          margin-bottom: 24px;
+        }
+
+        &-wrapper {
+          margin: 0 10px;
+        }
+      }
+
+      &-advisors__and__directors {
+        h3 {
+          font-size: 26px;
+          margin-bottom: 24px;
+        }
+
+        &-wrapper {
+          margin: 0 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .compony__block {
+    .data__science {
+      margin-bottom: 52px;
+
+      &-wrapper {
+        margin: 0 10px;
+      }
+    }
+
+    .company__employees {
+      margin-bottom: 100px;
+
+      &-founder {
+        margin-bottom: 67px;
+      }
+
+      &-executive__team {
+        margin-bottom: 40px;
+
+        &-wrapper {
+          grid-template-columns: 1fr;
+          grid-row-gap: 16px;
+
+          &__item {
+            padding: 20px;
+          }
+        }
+      }
+
+      &-advisors__and__directors {
+        &-wrapper {
+          grid-template-columns: 1fr;
+          grid-row-gap: 16px;
+
+          &__item {
+            padding: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+

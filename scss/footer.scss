@@ -34,6 +34,10 @@ footer {
       }
     }
   }
+
+  .footer__nav {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
@@ -49,6 +53,36 @@ footer {
     .footer__links a{
       &:nth-child(2) {
         margin: 0 30px;
+      }
+    }
+
+    .footer__nav {
+      display: block;
+      margin-top: 54px;
+      background: rgba(49, 43, 50, 0.7);
+      backdrop-filter: blur(15px);
+      border-radius: 43px;
+      padding: 19px 32px;
+      text-transform: uppercase;
+
+      a {
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        font-family: 'JetBrains Mono', monospace;
+
+        color: #FFFFFF;
+
+        &:nth-child(2) {
+          margin: 0 35px;
+        }
+
+        &.active {
+          opacity: 0.3;
+        }
       }
     }
   }
