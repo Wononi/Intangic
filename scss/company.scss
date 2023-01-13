@@ -15,6 +15,20 @@
       color: #FFFFFF;
       max-width: 890px;
       margin: 0 auto 85px auto;
+
+      span {
+        //white-space: pre;
+
+        &:nth-child(1) {
+          &::before {
+            content: '';
+          }
+        }
+
+        &::before {
+          content: ' ';
+        }
+      }
     }
 
     &-subtitle {
@@ -326,7 +340,7 @@
       margin-bottom: 180px;
       &-founder {
         blockquote {
-          padding: 0 10px;
+          padding: 0 20px;
           font-size: 24px;
         }
       }
@@ -393,6 +407,22 @@
 
           &__item {
             padding: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .compony__block {
+    .data__science {
+      h1 {
+        span {
+          white-space: pre;
+
+          &::before {
+            content: '\A'!important;
           }
         }
       }

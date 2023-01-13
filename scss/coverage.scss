@@ -131,7 +131,6 @@
             line-height: 120%;
             color: #FFFFFF;
             opacity: 0.5;
-            width: 56%;
 
             span {
               font-weight: 600;
@@ -199,8 +198,15 @@
       letter-spacing: -0.02em;
       color: #FFFFFF;
       opacity: 0.5;
-      max-width: 737px;
       margin: 0 auto 48px auto;
+
+      span {
+        white-space: pre;
+
+        &::before {
+          content: '\A';
+        }
+      }
     }
 
     a {
@@ -377,6 +383,16 @@
     }
 
     .customer__dashboard {
+      p {
+        span {
+          white-space: normal;
+
+          &::before {
+            content: ' ';
+          }
+        }
+      }
+
       a {
         margin-bottom: 36px;
       }

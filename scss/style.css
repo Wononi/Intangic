@@ -802,8 +802,7 @@ main.home__block {
             font-size: 14px;
             line-height: 120%;
             color: #FFFFFF;
-            opacity: 0.5;
-            width: 56%; }
+            opacity: 0.5; }
             .coverage__block .about__cyber__protection-list__item-picture .signature span {
               font-weight: 600;
               font-size: 16px; }
@@ -854,8 +853,11 @@ main.home__block {
       letter-spacing: -0.02em;
       color: #FFFFFF;
       opacity: 0.5;
-      max-width: 737px;
       margin: 0 auto 48px auto; }
+      .coverage__block .customer__dashboard p span {
+        white-space: pre; }
+        .coverage__block .customer__dashboard p span::before {
+          content: '\A'; }
     .coverage__block .customer__dashboard a {
       padding: 12px 14px;
       font-family: 'JetBrains Mono';
@@ -947,6 +949,10 @@ main.home__block {
         font-size: 12px; }
         .coverage__block .about__cyber__protection-list__item-picture .signature span {
           font-size: 14px; }
+  .coverage__block .customer__dashboard p span {
+    white-space: normal; }
+    .coverage__block .customer__dashboard p span::before {
+      content: ' '; }
   .coverage__block .customer__dashboard a {
     margin-bottom: 36px; }
   .coverage__block .customer__dashboard-img {
@@ -975,6 +981,10 @@ main.home__block {
       color: #FFFFFF;
       max-width: 890px;
       margin: 0 auto 85px auto; }
+      .compony__block .data__science h1 span:nth-child(1)::before {
+        content: ''; }
+      .compony__block .data__science h1 span::before {
+        content: ' '; }
     .compony__block .data__science-subtitle {
       display: none; }
     .compony__block .data__science-wrapper {
@@ -1194,7 +1204,7 @@ main.home__block {
   .compony__block .company__employees {
     margin-bottom: 180px; }
     .compony__block .company__employees-founder blockquote {
-      padding: 0 10px;
+      padding: 0 20px;
       font-size: 24px; }
     .compony__block .company__employees-executive__team h3 {
       font-size: 26px;
@@ -1227,6 +1237,11 @@ main.home__block {
       grid-row-gap: 16px; }
       .compony__block .company__employees-advisors__and__directors-wrapper__item {
         padding: 16px; } }
+@media (max-width: 425px) {
+  .compony__block .data__science h1 span {
+    white-space: pre; }
+    .compony__block .data__science h1 span::before {
+      content: "\a" !important; } }
 .donload__form__block section {
   display: flex;
   margin-left: 193px;
