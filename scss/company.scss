@@ -63,16 +63,6 @@
         &:nth-child(3) {
           position: relative;
         }
-
-        &-icon {
-          background: #00008F;
-          border-radius: 0px 0px 16px 16px;
-          position: absolute;
-          width: 100%;
-          padding: 36px 0 36px 48px;
-          left: 0;
-          bottom: 0;
-        }
       }
     }
   }
@@ -327,14 +317,6 @@
 
           &-text:nth-child(3) {
             margin: 0;
-          }
-
-          &-icon {
-            background: none;
-            border: none;
-            position: static;
-            width: auto;
-            padding: 0;
           }
         }
       }
