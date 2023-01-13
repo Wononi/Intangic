@@ -50,6 +50,7 @@ footer {
 
 @media (max-width: 767px) {
   footer {
+    padding: 30px 16px 112px 16px;
     .footer__links a{
       &:nth-child(2) {
         margin: 0 30px;

@@ -55,7 +55,7 @@ main.home__block {
 }
 
 .first__content__block,
-.second__content__block{
+.second__content__block {
   margin: 0 70px;
 }
 
@@ -169,20 +169,45 @@ main.home__block {
     top: -437px;
     background: linear-gradient(180deg, #FFC27B 0%, rgba(255, 197, 111, 0.46) 100%);
     filter: blur(156px);
+    border-radius: 100%;
     z-index: 4;
+
+    @media (max-width: 1100px) {
+      left: -439px;
+    }
+
+    @media (max-width: 650px) {
+      left: -689px;
+    }
+
+    @media (max-width: 450px) {
+      left: -716px;
+    }
   }
 
   &-shpere__bg-two {
     position: absolute;
-    width: 1030px;
-    height: 1034px;
-    left: 625px;
-    top: -488px;
-    background: rgb(47,90,242);
-    background: linear-gradient(180deg, rgba(47,90,242,1) 0%, rgba(112,97,163,1) 20%, rgba(245,138,37,0.3) 100%);
+    width: 1263px;
+    height: 1253px;
+    left: 641px;
+    top: -756px;
+    background: #2f5af2;
+    background: linear-gradient(180deg, #2f5af2 0%, #7061a3 20%, rgba(245, 138, 37, 0.3) 100%);
     mix-blend-mode: normal;
     filter: blur(130px);
     z-index: 3;
+    
+    @media (max-width: 1100px) {
+      left: 451px;
+    }
+
+    @media (max-width: 650px) {
+      left: 210px;
+    }
+
+    @media (max-width: 450px) {
+      left: 160px;
+    }
   }
 }
 
@@ -212,6 +237,11 @@ main.home__block {
     letter-spacing: -0.01em;
     color: #FFFFFF;
     text-align: center;
+    white-space: pre;
+
+    span::before {
+      content: '\A';
+    }
   }
 
   p {
@@ -225,29 +255,56 @@ main.home__block {
     opacity: 0.5;
     margin-top: 56px;
     margin-bottom: 158px;
+    max-width: 601px;
   }
 
   &-shpere__bg-one {
     position: absolute;
     width: 861px;
     height: 854px;
-    left: -244px;
+    left: -131px;
     top: -360px;
     background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
     filter: blur(100px);
+    border-radius: 100%;
     z-index: 4;
+
+    @media (max-width: 1600px) {
+      left: -244px;
+    }
+
+    @media (max-width: 1100px) {
+      left: -424px;
+    }
+
+    @media (max-width: 650px) {
+      left: -709px;
+    }
   }
 
   &-shpere__bg-two {
     position: absolute;
     width: 1263px;
     height: 1253px;
-    left: 448px;
+    left: 647px;
     top: -559px;
     background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
     mix-blend-mode: normal;
     filter: blur(130px);
+    border-radius: 100%;
     z-index: 3;
+
+    @media (max-width: 1600px) {
+      left: 448px;
+    }
+
+    @media (max-width: 1100px) {
+      left: 310px;
+    }
+
+    @media (max-width: 650px) {
+      left: -17px;
+    }
   }
 }
 
@@ -258,7 +315,38 @@ main.home__block {
   }
 }
 
+@media (max-width: 1238px) {
+  .first__content__block {
+    &-advantages {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, auto);
+      grid-column-gap: 0;
+      grid-row-gap: 48px;
+      margin-bottom: 46px;
+
+      &__item {
+        &:nth-child(2) {
+          border: none;
+
+          p {
+            width: auto;
+          }
+        }
+
+        p {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}
+
 @media (max-width: 1023px) {
+  main.home__block {
+    margin-top: 60px;
+  }
+
   .welcome__block {
     h1 {
       font-size: 39px;
@@ -321,12 +409,23 @@ main.home__block {
   }
 }
 
+@media (max-width: 880px) {
+  .first__content__block {
+    padding-bottom: 53%;
+
+    &-img img {
+      width: 142vw;
+      object-fit: scale-down;
+    }
+  }
+}
+
 @media (max-width: 767px) {
   .welcome__block {
     margin-bottom: 61px;
 
     h1 {
-      width: 87%;
+      width: auto;
     }
 
     p {
@@ -354,17 +453,55 @@ main.home__block {
     h2 {
       padding-left: 20px;
       padding-right: 20px;
+      white-space: normal;
+
+      span::before {
+        content: ' ';
+      }
     }
 
     p {
       margin-bottom: 40px;
       padding: 0 20px;
+      width: 80%;
     }
 
     svg {
       width: 100%;
       height: auto;
       padding: 0 14px;
+    }
+  }
+}
+
+@media (max-width: 389px) {
+  .welcome__block {
+    h1 {
+      font-size: 32px;
+    }
+  }
+
+  .first__content__block {
+    &-advantages {
+      &__item {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+
+    a {
+      font-size: 10px;
+    }
+  }
+
+  .second__content__block {
+    h2 {
+      font-size: 29px;
+    }
+
+    p {
+      width: 100%;
     }
   }
 }

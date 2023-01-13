@@ -74,7 +74,17 @@ header {
     margin: 0 16px;
 
     .navigation {
-      display: none;
+      display: block;
+      position: fixed;
+      bottom: 50px;
+      z-index: 100;
+      left: 50%;
+      transform: translate(-50%, 0);
+      width: max-content;
+      background: rgba(49, 43, 50, 0.7);
+      backdrop-filter: blur(15px);
+      border-radius: 43px;
+      padding: 19px 32px;
     }
   }
 }
