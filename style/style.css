@@ -21,7 +21,7 @@ body {
   mix-blend-mode: normal;
   filter: blur(130px);
   border-radius: 100%;
-  z-index: -1;
+  z-index: 1;
   opacity: 0.7;
   background: #2f5af2;
   background: -moz-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
@@ -698,6 +698,24 @@ main.home__block {
     font-size: 29px; }
   .second__content__block p {
     width: 100%; } }
+.welcome__block-sphere {
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, 0); }
+  @media (max-width: 425px) {
+    .welcome__block-sphere {
+      top: 60px; } }
+  .welcome__block-sphere canvas {
+    width: 1378px;
+    opacity: 0.5; }
+    @media (max-width: 1023px) {
+      .welcome__block-sphere canvas {
+        width: 1170px; } }
+    @media (max-width: 425px) {
+      .welcome__block-sphere canvas {
+        width: 670px; } }
+
 .coverage__block {
   margin-top: 159px; }
   .coverage__block .cyber__risk__info {
