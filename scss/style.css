@@ -127,6 +127,7 @@ header {
   left: -390px;
   top: 673px;
   background: linear-gradient(180deg, #FFC27B 0%, rgba(255, 197, 111, 0.46) 100%);
+  background-size: 1237px 1142px;
   opacity: 0.2;
   filter: blur(156px);
   border-radius: 100%;
@@ -141,6 +142,7 @@ header {
     .coverage__block-sphere__three {
       width: 828px;
       height: 833px;
+      background-size: 828px 833px;
       left: -374px;
       top: 561px; } }
   @media (max-width: 650px) {
@@ -154,6 +156,7 @@ header {
   top: 756px;
   background: #2f5af2;
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.7) 0%, rgba(112, 97, 163, 0.9) 50%, rgba(245, 138, 37, 0.3) 100%);
+  background-size: 1263px 1253px;
   mix-blend-mode: normal;
   filter: blur(130px);
   border-radius: 100%;
@@ -168,6 +171,7 @@ header {
     .coverage__block-sphere__four {
       width: 846px;
       height: 913px;
+      background-size: 846px 913px;
       left: 222px;
       top: 558px; } }
   @media (max-width: 650px) {
@@ -180,6 +184,7 @@ header {
   left: -327px;
   bottom: 0;
   background: linear-gradient(180deg, #FFC27B 0%, rgba(255, 197, 111, 0.46) 100%);
+  background-size: 1232px 1093px;
   opacity: 0.4;
   filter: blur(156px);
   transform: rotate(-180deg);
@@ -188,7 +193,8 @@ header {
   @media (max-width: 1600px) {
     .coverage__block-sphere__five {
       width: 882px;
-      height: 879px; } }
+      height: 879px;
+      background-size: 882px 879px; } }
   @media (max-width: 786px) {
     .coverage__block-sphere__five {
       display: none; } }
@@ -200,6 +206,7 @@ header {
   bottom: -675px;
   background: #2f5af2;
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
+  background-size: 1263px 1253px;
   mix-blend-mode: normal;
   filter: blur(130px);
   transform: rotate(-180deg);
@@ -222,6 +229,7 @@ header {
   left: -115px;
   top: -290px;
   background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
+  background-size: 855px 612px;
   opacity: 0.3;
   filter: blur(100px);
   border-radius: 100%;
@@ -230,6 +238,7 @@ header {
     .compony__block-sphere__one {
       width: 617px;
       height: 612px;
+      background-size: 617px 612px;
       left: -115px;
       top: -290px; } }
   @media (max-width: 1100px) {
@@ -239,6 +248,7 @@ header {
     .compony__block-sphere__one {
       width: 639px;
       height: 590px;
+      background-size: 639px 590px;
       left: -325px;
       top: -295px; } }
 .compony__block-sphere__two {
@@ -251,11 +261,13 @@ header {
   filter: blur(130px);
   background: #2f5af2;
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 50%, rgba(245, 138, 37, 0.4) 100%);
+  background-size: 1496px 1121px;
   border-radius: 100%;
   z-index: 3; }
   @media (max-width: 1600px) {
     .compony__block-sphere__two {
       width: 1263px;
+      background-size: 1263px 1121px;
       left: 739px;
       top: -45px; } }
   @media (max-width: 1100px) {
@@ -265,6 +277,7 @@ header {
     .compony__block-sphere__two {
       width: 1263px;
       height: 1253px;
+      background-size: 1263px 1253px;
       left: -98px;
       top: -73px; } }
 
@@ -275,6 +288,7 @@ header {
   left: -115px;
   top: -290px;
   background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
+  background-size: 617px 612px;
   opacity: 0.3;
   filter: blur(100px);
   z-index: -1; }
@@ -285,6 +299,7 @@ header {
   left: 521px;
   top: -342px;
   background: linear-gradient(180deg, #2F5AF2 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+  background-size: 1263px 1253px;
   mix-blend-mode: normal;
   opacity: 0.3;
   filter: blur(130px);
@@ -296,6 +311,7 @@ header {
   left: -492px;
   top: 435px;
   background: linear-gradient(180deg, #2F5AF2 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+  background-size: 1263px 1253px;
   mix-blend-mode: normal;
   opacity: 0.3;
   filter: blur(130px);
