@@ -3,21 +3,37 @@
   z-index: -1;
   left: 50%;
   transform: translate(-50%, 0);
-  
-  @media (max-width: 425px) {
-    top: 60px;
-  }
 
-  canvas {
-    width: 1378px;
-    opacity: 0.5;
-    
-    @media (max-width: 1023px) {
-      width: 1170px;
-    }
-    
-    @media (max-width: 425px) {
-      width: 670px;
-    }
-  }
+  //@media (max-width: 425px) {
+  //  top: 60px;
+  //}
+  //
+  //canvas {
+  //  width: 1378px;
+  //  opacity: 0.5;
+  //
+  //  @media (max-width: 1023px) {
+  //    width: 1170px;
+  //  }
+  //
+  //  @media (max-width: 425px) {
+  //    width: 670px;
+  //  }
+  //}
+}
+
+
+@import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
+//.welcome__block-sphere {
+//  overflow: hidden;
+//  margin: 0;
+//}
+#word {
+  font-family: Megrim, cursive;
+  font-size: 20vh;
+  position: absolute;
+  margin: 10px;
+  /*bottom: 0;*/
+  color: #fc0;
+  -webkit-text-stroke: 0.15vh #c0f;
 }

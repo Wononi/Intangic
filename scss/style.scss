@@ -55,6 +55,13 @@ body {
   }
 }
 
+main,
+.footer__wrapper,
+header{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 .wrapper {
   position: relative;
   overflow: hidden;

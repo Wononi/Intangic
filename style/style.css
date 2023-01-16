@@ -1,3 +1,4 @@
+@import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -44,6 +45,12 @@ body {
     .sphere__background {
       left: 132px;
       opacity: 1; } }
+
+main,
+.footer__wrapper,
+header {
+  max-width: 1400px;
+  margin: 0 auto; }
 
 .wrapper {
   position: relative;
@@ -277,8 +284,7 @@ body {
   z-index: -1; }
 
 header {
-  margin: 0 194px;
-  padding-top: 16px;
+  padding: 16px 146px 0 146px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -308,7 +314,7 @@ header {
     text-decoration: none; }
   header .download__page__link {
     width: fit-content;
-    padding: 12px 14px;
+    padding: 6px 14px;
     background: #FFFFFF;
     border-radius: 4px;
     font-family: 'JetBrains Mono', monospace;
@@ -324,13 +330,13 @@ header {
 
 @media (max-width: 1439px) {
   header {
-    margin: 0 134px; } }
+    padding: 16px 134px 0 134px; } }
 @media (max-width: 1023px) {
   header {
-    margin: 0 85px; } }
+    padding: 16px 85px 0 85px; } }
 @media (max-width: 767px) {
   header {
-    margin: 0 16px; }
+    padding: 16px 16px 0 16px; }
     header .navigation {
       display: block;
       position: fixed;
@@ -393,7 +399,7 @@ main.home__block {
 
 .first__content__block,
 .second__content__block {
-  margin: 0 70px; }
+  margin: 0 50px; }
 
 .first__content__block {
   background: #1E1E7D;
@@ -703,18 +709,15 @@ main.home__block {
   z-index: -1;
   left: 50%;
   transform: translate(-50%, 0); }
-  @media (max-width: 425px) {
-    .welcome__block-sphere {
-      top: 60px; } }
-  .welcome__block-sphere canvas {
-    width: 1378px;
-    opacity: 0.5; }
-    @media (max-width: 1023px) {
-      .welcome__block-sphere canvas {
-        width: 1170px; } }
-    @media (max-width: 425px) {
-      .welcome__block-sphere canvas {
-        width: 670px; } }
+
+#word {
+  font-family: Megrim, cursive;
+  font-size: 20vh;
+  position: absolute;
+  margin: 10px;
+  /*bottom: 0;*/
+  color: #fc0;
+  -webkit-text-stroke: 0.15vh #c0f; }
 
 .coverage__block {
   margin-top: 159px; }
@@ -747,7 +750,7 @@ main.home__block {
       display: grid;
       grid-template-columns: 30.61% 34.95% 30.61%;
       grid-column-gap: 16px;
-      margin: 0 312px;
+      margin: 0 292px;
       background: rgba(70, 62, 160, 0.7);
       backdrop-filter: blur(26px);
       border-radius: 16px;
@@ -799,7 +802,7 @@ main.home__block {
       display: flex;
       flex-direction: column;
       row-gap: 16px;
-      margin: 0 261px; }
+      margin: 0 242px; }
       .coverage__block .about__cyber__protection-list__item {
         padding: 72px 56px;
         background: rgba(70, 62, 160, 0.5);
@@ -846,7 +849,7 @@ main.home__block {
             color: rgba(254, 254, 254, 0.6);
             display: block; }
   .coverage__block .customer__dashboard {
-    margin: 0 262px;
+    margin: 0 242px;
     background: rgba(70, 62, 160, 0.5);
     backdrop-filter: blur(30px);
     border-radius: 16px; }
@@ -1009,7 +1012,7 @@ main.home__block {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 16px;
-      margin: 0 70px; }
+      margin: 0 50px; }
       .compony__block .data__science-wrapper__item {
         background: #27222A;
         border-radius: 16px;
@@ -1038,97 +1041,44 @@ main.home__block {
             margin-bottom: 25px; }
         .compony__block .data__science-wrapper__item:nth-child(3) {
           position: relative; }
-  .compony__block .company__employees {
-    margin-bottom: 441px; }
-    .compony__block .company__employees-founder {
-      margin-bottom: 129px; }
-      .compony__block .company__employees-founder blockquote {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: -0.01em;
-        color: #FFFFFF;
-        max-width: 900px;
-        margin: 0 auto;
-        margin-bottom: 41px; }
-      .compony__block .company__employees-founder figcaption {
-        font-family: 'JetBrains Mono';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 19.3846px;
-        line-height: 140%;
-        letter-spacing: 0.04em;
-        text-transform: uppercase;
-        color: #FFFFFF;
-        width: fit-content;
-        margin: 0 auto; }
-      .compony__block .company__employees-founder p.post {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 140%;
-        color: rgba(254, 254, 254, 0.6);
-        opacity: 0.3;
-        width: fit-content;
-        margin: 0 auto; }
-    .compony__block .company__employees-executive__team {
-      margin-bottom: 86px; }
-      .compony__block .company__employees-executive__team h3 {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 36px;
-        line-height: 120%;
-        text-align: center;
-        letter-spacing: -0.02em;
-        color: #F6F6F6;
-        width: fit-content;
-        margin: 0 auto 40px auto; }
-      .compony__block .company__employees-executive__team-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 220px;
-        grid-column-gap: 16px; }
-        .compony__block .company__employees-executive__team-wrapper__item {
-          background: #27222A;
-          border-radius: 16px;
-          padding: 40px; }
-          .compony__block .company__employees-executive__team-wrapper__item-info {
-            display: flex;
-            column-gap: 21px;
-            align-items: center;
-            margin-bottom: 101px; }
-            .compony__block .company__employees-executive__team-wrapper__item-info__name h4 {
-              font-family: 'JetBrains Mono';
-              font-style: normal;
-              font-weight: 500;
-              font-size: 19.3846px;
-              line-height: 140%;
-              letter-spacing: 0.04em;
-              text-transform: uppercase;
-              color: #FFFFFF; }
-            .compony__block .company__employees-executive__team-wrapper__item-info__name p {
-              font-family: 'Commissioner';
-              font-style: normal;
-              font-weight: 400;
-              font-size: 24px;
-              line-height: 120%;
-              color: rgba(254, 254, 254, 0.6);
-              opacity: 0.3; }
-          .compony__block .company__employees-executive__team-wrapper__item-text {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 140%;
-            display: flex;
-            align-items: flex-end;
-            color: #83848A; }
-    .compony__block .company__employees-advisors__and__directors h3 {
+  .compony__block .company__employees-founder {
+    margin-bottom: 129px; }
+    .compony__block .company__employees-founder blockquote {
+      font-family: 'Commissioner';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 120%;
+      text-align: center;
+      letter-spacing: -0.01em;
+      color: #FFFFFF;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-bottom: 41px; }
+    .compony__block .company__employees-founder figcaption {
+      font-family: 'JetBrains Mono';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 19.3846px;
+      line-height: 140%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      width: fit-content;
+      margin: 0 auto; }
+    .compony__block .company__employees-founder p.post {
+      font-family: 'Commissioner';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 140%;
+      color: rgba(254, 254, 254, 0.6);
+      opacity: 0.3;
+      width: fit-content;
+      margin: 0 auto; }
+  .compony__block .company__employees-executive__team {
+    margin-bottom: 86px; }
+    .compony__block .company__employees-executive__team h3 {
       font-family: 'Commissioner';
       font-style: normal;
       font-weight: 500;
@@ -1139,37 +1089,38 @@ main.home__block {
       color: #F6F6F6;
       width: fit-content;
       margin: 0 auto 40px auto; }
-    .compony__block .company__employees-advisors__and__directors-wrapper {
+    .compony__block .company__employees-executive__team-wrapper {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-column-gap: 16px;
-      margin: 0 220px; }
-      .compony__block .company__employees-advisors__and__directors-wrapper__item {
+      grid-template-columns: 1fr 1fr;
+      margin: 0 200px;
+      grid-column-gap: 16px; }
+      .compony__block .company__employees-executive__team-wrapper__item {
         background: #27222A;
         border-radius: 16px;
-        padding: 32px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between; }
-        .compony__block .company__employees-advisors__and__directors-wrapper__item h4 {
-          font-family: 'JetBrains Mono';
-          font-style: normal;
-          font-weight: 500;
-          font-size: 19.3846px;
-          line-height: 140%;
-          letter-spacing: 0.04em;
-          text-transform: uppercase;
-          color: #FFFFFF; }
-        .compony__block .company__employees-advisors__and__directors-wrapper__item p.post {
-          font-family: 'Commissioner';
-          font-style: normal;
-          font-weight: 400;
-          font-size: 24px;
-          line-height: 140%;
-          color: rgba(254, 254, 254, 0.6);
-          opacity: 0.3;
-          margin-bottom: 110px; }
-        .compony__block .company__employees-advisors__and__directors-wrapper__item p.text {
+        padding: 40px; }
+        .compony__block .company__employees-executive__team-wrapper__item-info {
+          display: flex;
+          column-gap: 21px;
+          align-items: center;
+          margin-bottom: 101px; }
+          .compony__block .company__employees-executive__team-wrapper__item-info__name h4 {
+            font-family: 'JetBrains Mono';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 19.3846px;
+            line-height: 140%;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: #FFFFFF; }
+          .compony__block .company__employees-executive__team-wrapper__item-info__name p {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 120%;
+            color: rgba(254, 254, 254, 0.6);
+            opacity: 0.3; }
+        .compony__block .company__employees-executive__team-wrapper__item-text {
           font-family: 'Commissioner';
           font-style: normal;
           font-weight: 400;
@@ -1178,17 +1129,65 @@ main.home__block {
           display: flex;
           align-items: flex-end;
           color: #83848A; }
+  .compony__block .company__employees-advisors__and__directors h3 {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #F6F6F6;
+    width: fit-content;
+    margin: 0 auto 40px auto; }
+  .compony__block .company__employees-advisors__and__directors-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 16px;
+    margin: 0 200px; }
+    .compony__block .company__employees-advisors__and__directors-wrapper__item {
+      background: #27222A;
+      border-radius: 16px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .compony__block .company__employees-advisors__and__directors-wrapper__item h4 {
+        font-family: 'JetBrains Mono';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 19.3846px;
+        line-height: 140%;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #FFFFFF; }
+      .compony__block .company__employees-advisors__and__directors-wrapper__item p.post {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 140%;
+        color: rgba(254, 254, 254, 0.6);
+        opacity: 0.3;
+        margin-bottom: 110px; }
+      .compony__block .company__employees-advisors__and__directors-wrapper__item p.text {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 140%;
+        display: flex;
+        align-items: flex-end;
+        color: #83848A; }
 
 @media (max-width: 1439px) {
-  .compony__block .company__employees {
-    margin-bottom: 330px; }
-    .compony__block .company__employees-executive__team-wrapper {
-      margin: 0 70px; }
-    .compony__block .company__employees-advisors__and__directors-wrapper {
-      margin: 0 70px; } }
+  .compony__block .company__employees-executive__team-wrapper {
+    margin: 0 70px; }
+  .compony__block .company__employees-advisors__and__directors-wrapper {
+    margin: 0 70px; } }
 @media (max-width: 1023px) {
   .compony__block .data__science h1 {
-    font-size: 39px;
+    font-size: 38px;
     padding: 0 10px;
     margin-bottom: 32px; }
   .compony__block .data__science-subtitle {
@@ -1219,42 +1218,38 @@ main.home__block {
         order: 1; }
       .compony__block .data__science-wrapper__item-text:nth-child(3) {
         margin: 0; }
-  .compony__block .company__employees {
-    margin-bottom: 180px; }
-    .compony__block .company__employees-founder blockquote {
-      padding: 0 20px;
-      font-size: 24px; }
-    .compony__block .company__employees-executive__team h3 {
-      font-size: 26px;
-      margin-bottom: 24px; }
-    .compony__block .company__employees-executive__team-wrapper {
-      margin: 0 10px; }
-    .compony__block .company__employees-advisors__and__directors h3 {
-      font-size: 26px;
-      margin-bottom: 24px; }
-    .compony__block .company__employees-advisors__and__directors-wrapper {
-      margin: 0 10px; } }
+  .compony__block .company__employees-founder blockquote {
+    padding: 0 20px;
+    font-size: 24px; }
+  .compony__block .company__employees-executive__team h3 {
+    font-size: 26px;
+    margin-bottom: 24px; }
+  .compony__block .company__employees-executive__team-wrapper {
+    margin: 0 10px; }
+  .compony__block .company__employees-advisors__and__directors h3 {
+    font-size: 26px;
+    margin-bottom: 24px; }
+  .compony__block .company__employees-advisors__and__directors-wrapper {
+    margin: 0 10px; } }
 @media (max-width: 767px) {
   .compony__block .data__science {
     margin-bottom: 52px; }
     .compony__block .data__science-wrapper {
       margin: 0 10px; }
-  .compony__block .company__employees {
-    margin-bottom: 100px; }
-    .compony__block .company__employees-founder {
-      margin-bottom: 67px; }
-    .compony__block .company__employees-executive__team {
-      margin-bottom: 40px; }
-      .compony__block .company__employees-executive__team-wrapper {
-        grid-template-columns: 1fr;
-        grid-row-gap: 16px; }
-        .compony__block .company__employees-executive__team-wrapper__item {
-          padding: 20px; }
-    .compony__block .company__employees-advisors__and__directors-wrapper {
+  .compony__block .company__employees-founder {
+    margin-bottom: 67px; }
+  .compony__block .company__employees-executive__team {
+    margin-bottom: 40px; }
+    .compony__block .company__employees-executive__team-wrapper {
       grid-template-columns: 1fr;
       grid-row-gap: 16px; }
-      .compony__block .company__employees-advisors__and__directors-wrapper__item {
-        padding: 16px; } }
+      .compony__block .company__employees-executive__team-wrapper__item {
+        padding: 20px; }
+  .compony__block .company__employees-advisors__and__directors-wrapper {
+    grid-template-columns: 1fr;
+    grid-row-gap: 16px; }
+    .compony__block .company__employees-advisors__and__directors-wrapper__item {
+      padding: 16px; } }
 @media (max-width: 425px) {
   .compony__block .data__science h1 span {
     white-space: pre; }
@@ -1327,14 +1322,16 @@ main.home__block {
     .donload__form__block section .left__content p {
       font-size: 14px; } }
 footer {
-  background: #FFFFFF;
+  background: #FFFFFF; }
+
+.footer__wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 0 193px;
   padding-top: 30px;
   margin-top: 70px; }
-  footer p {
+  .footer__wrapper p {
     font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -1344,30 +1341,30 @@ footer {
     width: 100%;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 40px; }
-  footer .footer__links {
+  .footer__wrapper .footer__links {
     margin-top: 16px; }
-    footer .footer__links a {
+    .footer__wrapper .footer__links a {
       font-family: 'Commissioner', sans-serif;
       font-weight: 400;
       font-size: 14px;
       line-height: 140%;
       color: #83848A; }
-      footer .footer__links a:nth-child(2) {
+      .footer__wrapper .footer__links a:nth-child(2) {
         margin: 0 40px; }
-  footer .footer__nav {
+  .footer__wrapper .footer__nav {
     display: none; }
 
 @media (max-width: 1023px) {
-  footer {
+  .footer__wrapper {
     padding: 0 16px;
     padding-top: 30px;
     margin-top: 17px; } }
 @media (max-width: 767px) {
-  footer {
+  .footer__wrapper {
     padding: 30px 16px 112px 16px; }
-    footer .footer__links a:nth-child(2) {
+    .footer__wrapper .footer__links a:nth-child(2) {
       margin: 0 30px; }
-    footer .footer__nav {
+    .footer__wrapper .footer__nav {
       display: block;
       margin-top: 54px;
       background: rgba(49, 43, 50, 0.7);
@@ -1375,7 +1372,7 @@ footer {
       border-radius: 43px;
       padding: 19px 32px;
       text-transform: uppercase; }
-      footer .footer__nav a {
+      .footer__wrapper .footer__nav a {
         color: #FFFFFF;
         font-weight: 500;
         font-size: 12px;
@@ -1384,9 +1381,9 @@ footer {
         text-transform: uppercase;
         font-family: 'JetBrains Mono', monospace;
         color: #FFFFFF; }
-        footer .footer__nav a:nth-child(2) {
+        .footer__wrapper .footer__nav a:nth-child(2) {
           margin: 0 35px; }
-        footer .footer__nav a.active {
+        .footer__wrapper .footer__nav a.active {
           opacity: 0.3; } }
 
 /*# sourceMappingURL=style.css.map */

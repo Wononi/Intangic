@@ -39,7 +39,7 @@
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 16px;
-      margin: 0 70px;
+      margin: 0 50px;
 
       &__item {
         background: #27222A;
@@ -82,8 +82,6 @@
   }
 
   .company__employees {
-    margin-bottom: 441px;
-
     &-founder {
       margin-bottom: 129px;
 
@@ -146,7 +144,7 @@
       &-wrapper {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        margin: 0 220px;
+        margin: 0 200px;
         grid-column-gap: 16px;
 
         &__item {
@@ -216,7 +214,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 16px;
-        margin: 0 220px;
+        margin: 0 200px;
 
         &__item {
           background: #27222A;
@@ -267,8 +265,6 @@
 @media (max-width: 1439px) {
   .compony__block {
     .company__employees {
-      margin-bottom: 330px;
-
       &-executive__team {
         &-wrapper {
           margin: 0 70px;
@@ -288,7 +284,7 @@
   .compony__block {
     .data__science {
       h1 {
-        font-size: 39px;
+        font-size: 38px;
         padding: 0 10px;
         margin-bottom: 32px;
       }
@@ -337,7 +333,6 @@
     }
 
     .company__employees {
-      margin-bottom: 180px;
       &-founder {
         blockquote {
           padding: 0 20px;
@@ -381,8 +376,6 @@
     }
 
     .company__employees {
-      margin-bottom: 100px;
-
       &-founder {
         margin-bottom: 67px;
       }

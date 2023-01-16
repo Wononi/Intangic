@@ -1,6 +1,5 @@
 header {
-  margin: 0 194px;
-  padding-top: 16px;
+  padding: 16px 146px 0 146px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -39,7 +38,7 @@ header {
 
   .download__page__link {
     width: fit-content;
-    padding: 12px 14px;
+    padding: 6px 14px;
     background: #FFFFFF;
     border-radius: 4px;
     font-family: 'JetBrains Mono', monospace;
@@ -59,19 +58,19 @@ header {
 
 @media (max-width: 1439px) {
   header {
-    margin: 0 134px;
+    padding: 16px 134px 0 134px;
   }
 }
 
 @media (max-width: 1023px) {
   header {
-    margin: 0 85px;
+    padding: 16px 85px 0 85px;
   }
 }
 
 @media (max-width: 767px) {
   header {
-    margin: 0 16px;
+    padding: 16px 16px 0 16px;
 
     .navigation {
       display: block;
