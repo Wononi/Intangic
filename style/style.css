@@ -12,6 +12,20 @@ li {
 body {
   position: relative; }
 
+.sphere__background,
+.coverage__block-sphere__one,
+.coverage__block-sphere__two,
+.coverage__block-sphere__three,
+.coverage__block-sphere__four,
+.coverage__block-sphere__five,
+.coverage__block-sphere__six,
+.compony__block-sphere__one,
+.compony__block-sphere__two,
+.donload__form__block-sphere__one,
+.donload__form__block-sphere__two,
+.donload__form__block-sphere__three {
+  transform: translate3d(0, 0, 0); }
+
 .sphere__background {
   position: absolute;
   width: 1263px;
@@ -27,6 +41,7 @@ body {
   background: -moz-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: -webkit-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
+  background-size: 1263px 1253px;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f5af2",endColorstr="#f58a25",GradientType=1); }
   @media (max-width: 1600px) {
     .sphere__background {
@@ -66,13 +81,15 @@ header {
   left: -300px;
   top: -427px;
   background: linear-gradient(180deg, #FFC27B 0%, rgba(255, 197, 111, 0.46) 100%);
+  background-size: 1137px 854px;
   opacity: 0.6;
   filter: blur(156px);
   border-radius: 100%;
   z-index: -1; }
   @media (max-width: 1600px) {
     .coverage__block-sphere__one {
-      width: 925px; } }
+      width: 925px;
+      background-size: 925px 854px; } }
   @media (max-width: 1100px) {
     .coverage__block-sphere__one {
       left: -311px;
@@ -81,6 +98,7 @@ header {
     .coverage__block-sphere__one {
       width: 639px;
       height: 590px;
+      background-size: 639px 590px;
       left: -325px;
       top: -295px; } }
 .coverage__block-sphere__two {
@@ -91,6 +109,7 @@ header {
   top: -488px;
   background: #2f5af2;
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
+  background-size: 1263px 1253px;
   mix-blend-mode: normal;
   filter: blur(130px);
   border-radius: 100%;
