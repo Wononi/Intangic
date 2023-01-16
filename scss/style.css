@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Megrim&display=swap";
 * {
   margin: 0;
   padding: 0;
@@ -707,17 +706,17 @@ main.home__block {
 .welcome__block-sphere {
   position: absolute;
   z-index: -1;
+  top: -5%;
   left: 50%;
   transform: translate(-50%, 0); }
-
-#word {
-  font-family: Megrim, cursive;
-  font-size: 20vh;
-  position: absolute;
-  margin: 10px;
-  /*bottom: 0;*/
-  color: #fc0;
-  -webkit-text-stroke: 0.15vh #c0f; }
+  .welcome__block-sphere canvas {
+    opacity: 0.5; }
+    @media (max-width: 1023px) {
+      .welcome__block-sphere canvas {
+        width: 1170px; } }
+    @media (max-width: 425px) {
+      .welcome__block-sphere canvas {
+        width: 670px; } }
 
 .coverage__block {
   margin-top: 159px; }
