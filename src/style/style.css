@@ -1,3 +1,4 @@
+@import url(download.css);
 * {
   margin: 0;
   padding: 0;
@@ -1295,72 +1296,6 @@ main.home__block {
     white-space: pre; }
     .compony__block .data__science h1 span::before {
       content: "\a" !important; } }
-.donload__form__block section {
-  display: flex;
-  margin-left: 193px;
-  column-gap: 179px;
-  margin-top: 108px; }
-  .donload__form__block section .left__content {
-    max-width: 507px; }
-    .donload__form__block section .left__content h2 {
-      font-family: 'Commissioner';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 110%;
-      letter-spacing: -0.02em;
-      color: #000000;
-      margin-bottom: 40px; }
-    .donload__form__block section .left__content p {
-      font-family: 'Commissioner';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 150%;
-      letter-spacing: -0.01em;
-      color: rgba(0, 0, 0, 0.8); }
-      .donload__form__block section .left__content p:nth-child(3) {
-        margin: 27px 0; }
-    .donload__form__block section .left__content a {
-      display: block;
-      margin-top: 40px;
-      padding: 12px 14px;
-      background: #000000;
-      border: 1px solid rgba(0, 0, 0, 0.04);
-      border-radius: 4px;
-      color: #FFFFFF;
-      font-family: 'JetBrains Mono';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 12px;
-      line-height: 100%;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      width: fit-content; }
-      .donload__form__block section .left__content a span:nth-child(3) {
-        opacity: 0.5; }
-      .donload__form__block section .left__content a svg,
-      .donload__form__block section .left__content a span {
-        vertical-align: middle; }
-
-@media (max-width: 1439px) {
-  .donload__form__block section {
-    margin-left: 134px;
-    column-gap: 60px; } }
-@media (max-width: 1023px) {
-  .donload__form__block section {
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0px;
-    row-gap: 20px; } }
-@media (max-width: 767px) {
-  .donload__form__block section {
-    margin-top: 54px;
-    padding: 0 10px; }
-    .donload__form__block section .left__content h2 {
-      font-size: 32px; }
-    .donload__form__block section .left__content p {
-      font-size: 14px; } }
 footer {
   background: #FFFFFF; }
 

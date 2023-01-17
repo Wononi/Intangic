@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <title>Intagnicmga - home</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Commissioner:wght@400;700&family=JetBrains+Mono:wght@500&display=swap"
@@ -138,7 +138,11 @@
                         <span>Learn more about our coverage</span>
                     </a>
                     <div class="first__content__block-img">
-                        <img class="first__content__block-img-desktop" src="./img/MacBook_Pro_16.png" alt="mac">
+                        <picture>
+                            <source srcset="./img/MacBook_Pro_16@2x.png 2x, ./img/MacBook_Pro_16.png 1x"/>
+                            <img src="./img/MacBook_Pro_16.png" alt="mac">
+                        </picture>
+<!--                        <img class="first__content__block-img-desktop" src="./img/MacBook_Pro_16.png" alt="mac">-->
                     </div>
                 </div>
                 <div class="first__content__block-shpere__bg-one"></div>
@@ -216,6 +220,6 @@
     </div>
 </div>
 
-<script src="./dist/main.js"></script>
+<script src="./assets/js/index.bundle.js"></script>
 </body>
 </html>
