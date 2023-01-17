@@ -1,3 +1,65 @@
+.download__form__block section {
+  display: flex;
+  margin-left: 193px;
+  column-gap: 179px;
+  margin-top: 108px; }
+  .download__form__block section .left__content {
+    max-width: 507px; }
+    .download__form__block section .left__content h2 {
+      font-style: normal;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 110%;
+      letter-spacing: -0.02em;
+      color: #000000;
+      margin-bottom: 40px; }
+    .download__form__block section .left__content p {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 150%;
+      letter-spacing: -0.01em;
+      color: rgba(0, 0, 0, 0.8); }
+      .download__form__block section .left__content p:nth-child(3) {
+        margin: 27px 0; }
+    .download__form__block section .left__content a {
+      display: block;
+      margin-top: 40px;
+      padding: 12px 14px;
+      background: #000000;
+      border: 1px solid rgba(0, 0, 0, 0.04);
+      border-radius: 4px;
+      color: #FFFFFF;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      width: fit-content; }
+      .download__form__block section .left__content a span:nth-child(3) {
+        opacity: 0.5; }
+      .download__form__block section .left__content a svg,
+      .download__form__block section .left__content a span {
+        vertical-align: middle; }
 
+@media (max-width: 1439px) {
+  .download__form__block section {
+    margin-left: 134px;
+    column-gap: 60px; } }
+@media (max-width: 1023px) {
+  .download__form__block section {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    row-gap: 20px; } }
+@media (max-width: 767px) {
+  .download__form__block section {
+    margin-top: 54px;
+    padding: 0 10px; }
+    .download__form__block section .left__content h2 {
+      font-size: 32px; }
+    .download__form__block section .left__content p {
+      font-size: 14px; } }
 
 /*# sourceMappingURL=download.css.map */

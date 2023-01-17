@@ -1,4 +1,4 @@
-.donload__form__block {
+.download__form__block {
   section {
     display: flex;
     margin-left: 193px;
@@ -9,7 +9,6 @@
       max-width: 507px;
 
       h2 {
-        font-family: 'Commissioner';
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
@@ -20,7 +19,6 @@
       }
 
       p {
-        font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
         font-size: 18px;
@@ -41,7 +39,6 @@
         border: 1px solid rgba(0, 0, 0, 0.04);
         border-radius: 4px;
         color: #FFFFFF;
-        font-family: 'JetBrains Mono';
         font-style: normal;
         font-weight: 500;
         font-size: 12px;
@@ -64,7 +61,7 @@
 }
 
 @media (max-width: 1439px) {
-  .donload__form__block {
+  .download__form__block {
     section {
       margin-left: 134px;
       column-gap: 60px;
@@ -73,18 +70,18 @@
 }
 
 @media (max-width: 1023px) {
-  .donload__form__block {
+  .download__form__block {
     section {
       flex-direction: column;
       align-items: center;
-      margin-left: 0px;
+      margin-left: 0;
       row-gap: 20px;
     }
   }
 }
 
 @media (max-width: 767px) {
-  .donload__form__block {
+  .download__form__block {
     section {
       margin-top: 54px;
       padding: 0 10px;

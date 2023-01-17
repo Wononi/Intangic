@@ -1,11 +1,10 @@
-.compony__block {
+.company__block {
   margin-top: 127px;
 
   .data__science {
     margin-bottom: 157px;
 
     h1 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
@@ -49,20 +48,16 @@
         .h2-heading {
           display: block;
           margin: 22px 0 24px 0;
-          font-family: 'Commissioner';
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
           line-height: 120%;
-          display: flex;
-          align-items: center;
           letter-spacing: -0.02em;
           color: #FFFFFF;
         }
 
         &-text {
           display: block;
-          font-family: 'Commissioner';
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -95,8 +90,7 @@
         letter-spacing: -0.01em;
         color: #FFFFFF;
         max-width: 900px;
-        margin: 0 auto;
-        margin-bottom: 41px;
+        margin: 0 auto 41px auto;
       }
 
       figcaption {
@@ -113,7 +107,6 @@
       }
 
       p.post {
-        font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -160,7 +153,6 @@
 
             &__name {
               h4 {
-                font-family: 'JetBrains Mono';
                 font-style: normal;
                 font-weight: 500;
                 font-size: 19.3846px;
@@ -171,7 +163,6 @@
               }
 
               p {
-                font-family: 'Commissioner';
                 font-style: normal;
                 font-weight: 400;
                 font-size: 24px;
@@ -183,7 +174,6 @@
           }
 
           &-text {
-            font-family: 'Commissioner';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -225,7 +215,6 @@
           justify-content: space-between;
 
           h4 {
-            font-family: 'JetBrains Mono';
             font-style: normal;
             font-weight: 500;
             font-size: 19.3846px;
@@ -236,7 +225,6 @@
           }
 
           p.post {
-            font-family: 'Commissioner';
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -247,7 +235,6 @@
           }
 
           p.text {
-            font-family: 'Commissioner';
             font-style: normal;
             font-weight: 400;
             font-size: 16px;
@@ -263,7 +250,7 @@
 }
 
 @media (max-width: 1439px) {
-  .compony__block {
+  .company__block {
     .company__employees {
       &-executive__team {
         &-wrapper {
@@ -281,7 +268,7 @@
 }
 
 @media (max-width: 1023px) {
-  .compony__block {
+  .company__block {
     .data__science {
       h1 {
         font-size: 38px;
@@ -291,7 +278,6 @@
 
       &-subtitle {
         display: block;
-        font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
         font-size: 18px;
@@ -366,7 +352,7 @@
 }
 
 @media (max-width: 767px) {
-  .compony__block {
+  .company__block {
     .data__science {
       margin-bottom: 52px;
 
@@ -408,7 +394,7 @@
 }
 
 @media (max-width: 425px) {
-  .compony__block {
+  .company__block {
     .data__science {
       h1 {
         span {

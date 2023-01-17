@@ -12,6 +12,23 @@ li {
   list-style: none;
 }
 
+h1, h2, .h2-heading, p, .text, .data__science-wrapper__item-text {
+  font-family: 'Commissioner', sans-serif;
+}
+
+a, h3, h4, .h3-heading {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: center;
+}
+
 body {
   position: relative;
 }
@@ -23,15 +40,15 @@ body {
 .coverage__block-sphere__four,
 .coverage__block-sphere__five,
 .coverage__block-sphere__six,
-.compony__block-sphere__one,
-.compony__block-sphere__two,
-.donload__form__block-sphere__one,
-.donload__form__block-sphere__two,
-.donload__form__block-sphere__three,
-.first__content__block-shpere__bg-one,
-.first__content__block-shpere__bg-two,
-.second__content__block-shpere__bg-one,
-.second__content__block-shpere__bg-two{
+.company__block-sphere__one,
+.company__block-sphere__two,
+.download__form__block-sphere__one,
+.download__form__block-sphere__two,
+.download__form__block-sphere__three,
+.first__content__block-sphere__bg-one,
+.first__content__block-sphere__bg-two,
+.second__content__block-sphere__bg-one,
+.second__content__block-sphere__bg-two {
   transform: translate3d(0, 0, 0);
 }
 
@@ -51,24 +68,23 @@ body {
   background: -webkit-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background-size: 1263px 1253px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f5af2",endColorstr="#f58a25",GradientType=1);
-  
+
   @media (max-width: 1600px) {
     left: 662px;
   }
-  
+
   @media (max-width: 1340px) {
     left: 472px;
   }
-  
+
   @media (max-width: 1023px) {
     left: 362px;
   }
-  
+
   @media (max-width: 700px) {
     left: 234px;
   }
-  
+
   @media (max-width: 400px) {
     left: 132px;
     opacity: 1;
@@ -77,7 +93,7 @@ body {
 
 main,
 .footer__wrapper,
-header{
+header {
   max-width: 1400px;
   margin: 0 auto;
 }
@@ -105,12 +121,12 @@ header{
     filter: blur(156px);
     border-radius: 100%;
     z-index: -1;
-    
+
     @media (max-width: 1600px) {
       width: 925px;
       background-size: 925px 854px;
     }
-    
+
     @media (max-width: 1100px) {
       left: -311px;
       top: -499px;
@@ -164,11 +180,11 @@ header{
     @media (max-width: 1600px) {
       left: -456px;
     }
-    
+
     @media (max-width: 1100px) {
       left: -678px;
     }
-    
+
     @media (max-width: 767px) {
       width: 828px;
       height: 833px;
@@ -211,7 +227,7 @@ header{
       left: 222px;
       top: 558px;
     }
-    
+
     @media (max-width: 650px) {
       left: 68px;
     }
@@ -230,7 +246,7 @@ header{
     transform: rotate(-180deg);
     border-radius: 100%;
     z-index: -1;
-    
+
     @media (max-width: 1600px) {
       width: 882px;
       height: 879px;
@@ -264,14 +280,14 @@ header{
     @media (max-width: 1100px) {
       right: -857px
     }
-    
+
     @media (max-width: 786px) {
       display: none;
     }
   }
 }
 
-.compony__block-sphere {
+.company__block-sphere {
   &__one {
     position: absolute;
     width: 855px;
@@ -292,11 +308,11 @@ header{
       left: -115px;
       top: -290px;
     }
-    
+
     @media (max-width: 1100px) {
       left: -212px;
     }
-    
+
     @media (max-width: 768px) {
       width: 639px;
       height: 590px;
@@ -341,7 +357,7 @@ header{
   }
 }
 
-.donload__form__block-sphere {
+.download__form__block-sphere {
   &__one {
     position: absolute;
     width: 617px;

@@ -5,7 +5,6 @@
     margin-bottom: 116px;
 
     h1 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
@@ -16,7 +15,6 @@
     }
 
     &-subtitle {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
@@ -26,9 +24,7 @@
       color: #FFFFFF;
       opacity: 0.6;
       width: 57%;
-      margin: 0 auto;
-      margin-top: 32px;
-      margin-bottom: 57px;
+      margin: 32px auto 57px auto;
     }
 
     ul {
@@ -49,7 +45,6 @@
         }
 
         p.h3-heading {
-          font-family: 'JetBrains Mono';
           font-style: normal;
           font-weight: 500;
           font-size: 19.3846px;
@@ -68,7 +63,6 @@
         }
 
         p.text {
-          font-family: 'Commissioner';
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -90,7 +84,6 @@
     margin-bottom: 20px;
 
     h2 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 600;
       font-size: 56px;
@@ -143,7 +136,6 @@
           height: fit-content;
 
           .h3-heading {
-            font-family: 'JetBrains Mono';
             font-style: normal;
             font-weight: 500;
             font-size: 19.3846px;
@@ -156,7 +148,6 @@
           }
 
           .text {
-            font-family: 'Commissioner';
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -176,7 +167,6 @@
     border-radius: 16px;
 
     h2 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
@@ -189,7 +179,6 @@
     }
 
     p {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
@@ -211,7 +200,6 @@
 
     a {
       padding: 12px 14px;
-      font-family: 'JetBrains Mono';
       font-style: normal;
       font-weight: 500;
       font-size: 12px;

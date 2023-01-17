@@ -10,6 +10,20 @@ a {
 li {
   list-style: none; }
 
+h1, h2, .h2-heading, p, .text, .data__science-wrapper__item-text {
+  font-family: 'Commissioner', sans-serif; }
+
+a, h3, h4, .h3-heading {
+  font-family: 'JetBrains Mono', monospace; }
+
+h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 110%;
+  letter-spacing: -0.02em;
+  color: #fff;
+  text-align: center; }
+
 body {
   position: relative; }
 
@@ -20,15 +34,15 @@ body {
 .coverage__block-sphere__four,
 .coverage__block-sphere__five,
 .coverage__block-sphere__six,
-.compony__block-sphere__one,
-.compony__block-sphere__two,
-.donload__form__block-sphere__one,
-.donload__form__block-sphere__two,
-.donload__form__block-sphere__three,
-.first__content__block-shpere__bg-one,
-.first__content__block-shpere__bg-two,
-.second__content__block-shpere__bg-one,
-.second__content__block-shpere__bg-two {
+.company__block-sphere__one,
+.company__block-sphere__two,
+.download__form__block-sphere__one,
+.download__form__block-sphere__two,
+.download__form__block-sphere__three,
+.first__content__block-sphere__bg-one,
+.first__content__block-sphere__bg-two,
+.second__content__block-sphere__bg-one,
+.second__content__block-sphere__bg-two {
   transform: translate3d(0, 0, 0); }
 
 .sphere__background {
@@ -46,8 +60,7 @@ body {
   background: -moz-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: -webkit-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
-  background-size: 1263px 1253px;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2f5af2",endColorstr="#f58a25",GradientType=1); }
+  background-size: 1263px 1253px; }
   @media (max-width: 1600px) {
     .sphere__background {
       left: 662px; } }
@@ -227,7 +240,7 @@ header {
     .coverage__block-sphere__six {
       display: none; } }
 
-.compony__block-sphere__one {
+.company__block-sphere__one {
   position: absolute;
   width: 855px;
   height: 612px;
@@ -240,23 +253,23 @@ header {
   border-radius: 100%;
   z-index: 4; }
   @media (max-width: 1600px) {
-    .compony__block-sphere__one {
+    .company__block-sphere__one {
       width: 617px;
       height: 612px;
       background-size: 617px 612px;
       left: -115px;
       top: -290px; } }
   @media (max-width: 1100px) {
-    .compony__block-sphere__one {
+    .company__block-sphere__one {
       left: -212px; } }
   @media (max-width: 768px) {
-    .compony__block-sphere__one {
+    .company__block-sphere__one {
       width: 639px;
       height: 590px;
       background-size: 639px 590px;
       left: -325px;
       top: -295px; } }
-.compony__block-sphere__two {
+.company__block-sphere__two {
   position: absolute;
   width: 1496px;
   height: 1121px;
@@ -270,23 +283,23 @@ header {
   border-radius: 100%;
   z-index: 3; }
   @media (max-width: 1600px) {
-    .compony__block-sphere__two {
+    .company__block-sphere__two {
       width: 1263px;
       background-size: 1263px 1121px;
       left: 739px;
       top: -45px; } }
   @media (max-width: 1100px) {
-    .compony__block-sphere__two {
+    .company__block-sphere__two {
       left: 639px; } }
   @media (max-width: 768px) {
-    .compony__block-sphere__two {
+    .company__block-sphere__two {
       width: 1263px;
       height: 1253px;
       background-size: 1263px 1253px;
       left: -98px;
       top: -73px; } }
 
-.donload__form__block-sphere__one {
+.download__form__block-sphere__one {
   position: absolute;
   width: 617px;
   height: 612px;
@@ -297,7 +310,7 @@ header {
   opacity: 0.3;
   filter: blur(100px);
   z-index: -1; }
-.donload__form__block-sphere__two {
+.download__form__block-sphere__two {
   position: absolute;
   width: 1263px;
   height: 1253px;
@@ -309,7 +322,7 @@ header {
   opacity: 0.3;
   filter: blur(130px);
   z-index: -1; }
-.donload__form__block-sphere__three {
+.download__form__block-sphere__three {
   position: absolute;
   width: 1263px;
   height: 1253px;
@@ -330,7 +343,6 @@ header {
   header .navigation a {
     color: #fff;
     text-transform: uppercase;
-    font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
@@ -345,7 +357,6 @@ header {
     padding: 12px 14px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 4px;
-    font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
@@ -356,7 +367,6 @@ header {
     padding: 6px 14px;
     background: #FFFFFF;
     border-radius: 4px;
-    font-family: 'JetBrains Mono', monospace;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -399,19 +409,10 @@ main.home__block {
   align-items: center;
   margin-bottom: 125px; }
   .welcome__block h1 {
-    font-family: 'Commissioner', sans-serif;
-    font-weight: 700;
-    font-size: 64px;
-    line-height: 110%;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #fff;
-    text-align: center;
     width: 70%; }
   .welcome__block p {
     margin-top: 32px;
     margin-bottom: 110px;
-    font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     font-size: 30px;
     line-height: 140%;
@@ -425,7 +426,6 @@ main.home__block {
     padding: 12px 14px;
     background: #FFFFFF;
     border-radius: 4px;
-    font-family: 'JetBrains Mono', monospace;
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 0.04em;
@@ -452,7 +452,6 @@ main.home__block {
     position: relative;
     z-index: 5; }
   .first__content__block h2 {
-    font-family: 'Commissioner', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
@@ -476,7 +475,6 @@ main.home__block {
         width: 70%;
         margin: 0 auto; }
     .first__content__block-advantages__item h3 {
-      font-family: 'JetBrains Mono', monospace;
       font-weight: 500;
       font-size: 19.3846px;
       line-height: 140%;
@@ -488,7 +486,6 @@ main.home__block {
       .first__content__block-advantages__item h3 span {
         vertical-align: middle; }
     .first__content__block-advantages__item p {
-      font-family: 'Commissioner', sans-serif;
       font-weight: 400;
       font-size: 16px;
       line-height: 140%;
@@ -497,7 +494,6 @@ main.home__block {
       opacity: 0.5;
       text-align: center; }
   .first__content__block a {
-    font-family: 'JetBrains Mono', monospace;
     font-weight: 500;
     font-size: 12px;
     line-height: 100%;
@@ -517,7 +513,7 @@ main.home__block {
     position: absolute;
     left: 50%;
     transform: translate(-50%, 0); }
-  .first__content__block-shpere__bg-one {
+  .first__content__block-sphere__bg-one {
     position: absolute;
     width: 925px;
     height: 854px;
@@ -529,15 +525,15 @@ main.home__block {
     border-radius: 100%;
     z-index: 4; }
     @media (max-width: 1100px) {
-      .first__content__block-shpere__bg-one {
+      .first__content__block-sphere__bg-one {
         left: -439px; } }
     @media (max-width: 650px) {
-      .first__content__block-shpere__bg-one {
+      .first__content__block-sphere__bg-one {
         left: -689px; } }
     @media (max-width: 450px) {
-      .first__content__block-shpere__bg-one {
+      .first__content__block-sphere__bg-one {
         left: -716px; } }
-  .first__content__block-shpere__bg-two {
+  .first__content__block-sphere__bg-two {
     position: absolute;
     width: 1263px;
     height: 1253px;
@@ -550,13 +546,13 @@ main.home__block {
     filter: blur(130px);
     z-index: 3; }
     @media (max-width: 1100px) {
-      .first__content__block-shpere__bg-two {
+      .first__content__block-sphere__bg-two {
         left: 451px; } }
     @media (max-width: 650px) {
-      .first__content__block-shpere__bg-two {
+      .first__content__block-sphere__bg-two {
         left: 210px; } }
     @media (max-width: 450px) {
-      .first__content__block-shpere__bg-two {
+      .first__content__block-sphere__bg-two {
         left: 160px; } }
 
 .second__content__block {
@@ -574,7 +570,6 @@ main.home__block {
     align-items: center; }
   .second__content__block h2 {
     padding-top: 100px;
-    font-family: 'Commissioner', sans-serif;
     font-weight: 700;
     font-size: 48px;
     line-height: 120%;
@@ -586,7 +581,6 @@ main.home__block {
     .second__content__block h2 span::before {
       content: '\A'; }
   .second__content__block p {
-    font-family: 'Commissioner', sans-serif;
     font-weight: 400;
     font-size: 24px;
     line-height: 150%;
@@ -597,7 +591,7 @@ main.home__block {
     margin-top: 56px;
     margin-bottom: 158px;
     max-width: 601px; }
-  .second__content__block-shpere__bg-one {
+  .second__content__block-sphere__bg-one {
     position: absolute;
     width: 861px;
     height: 854px;
@@ -608,15 +602,15 @@ main.home__block {
     border-radius: 100%;
     z-index: 4; }
     @media (max-width: 1600px) {
-      .second__content__block-shpere__bg-one {
+      .second__content__block-sphere__bg-one {
         left: -244px; } }
     @media (max-width: 1100px) {
-      .second__content__block-shpere__bg-one {
+      .second__content__block-sphere__bg-one {
         left: -424px; } }
     @media (max-width: 650px) {
-      .second__content__block-shpere__bg-one {
+      .second__content__block-sphere__bg-one {
         left: -709px; } }
-  .second__content__block-shpere__bg-two {
+  .second__content__block-sphere__bg-two {
     position: absolute;
     width: 1263px;
     height: 1253px;
@@ -628,13 +622,13 @@ main.home__block {
     border-radius: 100%;
     z-index: 3; }
     @media (max-width: 1600px) {
-      .second__content__block-shpere__bg-two {
+      .second__content__block-sphere__bg-two {
         left: 448px; } }
     @media (max-width: 1100px) {
-      .second__content__block-shpere__bg-two {
+      .second__content__block-sphere__bg-two {
         left: 310px; } }
     @media (max-width: 650px) {
-      .second__content__block-shpere__bg-two {
+      .second__content__block-sphere__bg-two {
         left: -17px; } }
 
 @media (max-width: 1439px) {
@@ -765,7 +759,6 @@ main.home__block {
   .coverage__block .cyber__risk__info {
     margin-bottom: 116px; }
     .coverage__block .cyber__risk__info h1 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
@@ -774,7 +767,6 @@ main.home__block {
       letter-spacing: -0.02em;
       color: #FFFFFF; }
     .coverage__block .cyber__risk__info-subtitle {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 400;
       font-size: 30px;
@@ -784,9 +776,7 @@ main.home__block {
       color: #FFFFFF;
       opacity: 0.6;
       width: 57%;
-      margin: 0 auto;
-      margin-top: 32px;
-      margin-bottom: 57px; }
+      margin: 32px auto 57px auto; }
     .coverage__block .cyber__risk__info ul {
       display: grid;
       grid-template-columns: 30.61% 34.95% 30.61%;
@@ -800,7 +790,6 @@ main.home__block {
         border-right: 1px solid rgba(225, 225, 225, 0.1);
         border-left: 1px solid rgba(225, 225, 225, 0.1); }
       .coverage__block .cyber__risk__info ul li p.h3-heading {
-        font-family: 'JetBrains Mono';
         font-style: normal;
         font-weight: 500;
         font-size: 19.3846px;
@@ -815,7 +804,6 @@ main.home__block {
         .coverage__block .cyber__risk__info ul li p.h3-heading span::before {
           content: '\A'; }
       .coverage__block .cyber__risk__info ul li p.text {
-        font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -829,7 +817,6 @@ main.home__block {
   .coverage__block .about__cyber__protection {
     margin-bottom: 20px; }
     .coverage__block .about__cyber__protection h2 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 600;
       font-size: 56px;
@@ -871,7 +858,6 @@ main.home__block {
         .coverage__block .about__cyber__protection-list__item-text {
           height: fit-content; }
           .coverage__block .about__cyber__protection-list__item-text .h3-heading {
-            font-family: 'JetBrains Mono';
             font-style: normal;
             font-weight: 500;
             font-size: 19.3846px;
@@ -882,7 +868,6 @@ main.home__block {
             display: block;
             margin-bottom: 16px; }
           .coverage__block .about__cyber__protection-list__item-text .text {
-            font-family: 'Commissioner';
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
@@ -895,7 +880,6 @@ main.home__block {
     backdrop-filter: blur(30px);
     border-radius: 16px; }
     .coverage__block .customer__dashboard h2 {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 700;
       font-size: 48px;
@@ -906,7 +890,6 @@ main.home__block {
       padding-top: 65px;
       margin-bottom: 24px; }
     .coverage__block .customer__dashboard p {
-      font-family: 'Commissioner';
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
@@ -922,7 +905,6 @@ main.home__block {
           content: '\A'; }
     .coverage__block .customer__dashboard a {
       padding: 12px 14px;
-      font-family: 'JetBrains Mono';
       font-style: normal;
       font-weight: 500;
       font-size: 12px;
@@ -1028,12 +1010,11 @@ main.home__block {
     content: '\A'; }
   .coverage__block .cyber__risk__info ul li p.text span::before {
     content: '\A'; } }
-.compony__block {
+.company__block {
   margin-top: 127px; }
-  .compony__block .data__science {
+  .company__block .data__science {
     margin-bottom: 157px; }
-    .compony__block .data__science h1 {
-      font-family: 'Commissioner';
+    .company__block .data__science h1 {
       font-style: normal;
       font-weight: 700;
       font-size: 64px;
@@ -1043,48 +1024,44 @@ main.home__block {
       color: #FFFFFF;
       max-width: 890px;
       margin: 0 auto 85px auto; }
-      .compony__block .data__science h1 span:nth-child(1)::before {
+      .company__block .data__science h1 span:nth-child(1)::before {
         content: ''; }
-      .compony__block .data__science h1 span::before {
+      .company__block .data__science h1 span::before {
         content: ' '; }
-    .compony__block .data__science-subtitle {
+    .company__block .data__science-subtitle {
       display: none; }
-    .compony__block .data__science-wrapper {
+    .company__block .data__science-wrapper {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       grid-column-gap: 16px;
       margin: 0 50px; }
-      .compony__block .data__science-wrapper__item {
+      .company__block .data__science-wrapper__item {
         background: #27222A;
         border-radius: 16px;
         padding: 23px 48px 61px 48px; }
-        .compony__block .data__science-wrapper__item .h2-heading {
+        .company__block .data__science-wrapper__item .h2-heading {
           display: block;
           margin: 22px 0 24px 0;
-          font-family: 'Commissioner';
           font-style: normal;
           font-weight: 700;
           font-size: 24px;
           line-height: 120%;
-          display: flex;
-          align-items: center;
           letter-spacing: -0.02em;
           color: #FFFFFF; }
-        .compony__block .data__science-wrapper__item-text {
+        .company__block .data__science-wrapper__item-text {
           display: block;
-          font-family: 'Commissioner';
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
           color: #83848A; }
-          .compony__block .data__science-wrapper__item-text:nth-child(3) {
+          .company__block .data__science-wrapper__item-text:nth-child(3) {
             margin-bottom: 25px; }
-        .compony__block .data__science-wrapper__item:nth-child(3) {
+        .company__block .data__science-wrapper__item:nth-child(3) {
           position: relative; }
-  .compony__block .company__employees-founder {
+  .company__block .company__employees-founder {
     margin-bottom: 129px; }
-    .compony__block .company__employees-founder blockquote {
+    .company__block .company__employees-founder blockquote {
       font-family: 'Commissioner';
       font-style: normal;
       font-weight: 600;
@@ -1094,9 +1071,8 @@ main.home__block {
       letter-spacing: -0.01em;
       color: #FFFFFF;
       max-width: 900px;
-      margin: 0 auto;
-      margin-bottom: 41px; }
-    .compony__block .company__employees-founder figcaption {
+      margin: 0 auto 41px auto; }
+    .company__block .company__employees-founder figcaption {
       font-family: 'JetBrains Mono';
       font-style: normal;
       font-weight: 500;
@@ -1107,8 +1083,7 @@ main.home__block {
       color: #FFFFFF;
       width: fit-content;
       margin: 0 auto; }
-    .compony__block .company__employees-founder p.post {
-      font-family: 'Commissioner';
+    .company__block .company__employees-founder p.post {
       font-style: normal;
       font-weight: 400;
       font-size: 24px;
@@ -1117,9 +1092,9 @@ main.home__block {
       opacity: 0.3;
       width: fit-content;
       margin: 0 auto; }
-  .compony__block .company__employees-executive__team {
+  .company__block .company__employees-executive__team {
     margin-bottom: 86px; }
-    .compony__block .company__employees-executive__team h3 {
+    .company__block .company__employees-executive__team h3 {
       font-family: 'Commissioner';
       font-style: normal;
       font-weight: 500;
@@ -1130,22 +1105,21 @@ main.home__block {
       color: #F6F6F6;
       width: fit-content;
       margin: 0 auto 40px auto; }
-    .compony__block .company__employees-executive__team-wrapper {
+    .company__block .company__employees-executive__team-wrapper {
       display: grid;
       grid-template-columns: 1fr 1fr;
       margin: 0 200px;
       grid-column-gap: 16px; }
-      .compony__block .company__employees-executive__team-wrapper__item {
+      .company__block .company__employees-executive__team-wrapper__item {
         background: #27222A;
         border-radius: 16px;
         padding: 40px; }
-        .compony__block .company__employees-executive__team-wrapper__item-info {
+        .company__block .company__employees-executive__team-wrapper__item-info {
           display: flex;
           column-gap: 21px;
           align-items: center;
           margin-bottom: 101px; }
-          .compony__block .company__employees-executive__team-wrapper__item-info__name h4 {
-            font-family: 'JetBrains Mono';
+          .company__block .company__employees-executive__team-wrapper__item-info__name h4 {
             font-style: normal;
             font-weight: 500;
             font-size: 19.3846px;
@@ -1153,16 +1127,14 @@ main.home__block {
             letter-spacing: 0.04em;
             text-transform: uppercase;
             color: #FFFFFF; }
-          .compony__block .company__employees-executive__team-wrapper__item-info__name p {
-            font-family: 'Commissioner';
+          .company__block .company__employees-executive__team-wrapper__item-info__name p {
             font-style: normal;
             font-weight: 400;
             font-size: 24px;
             line-height: 120%;
             color: rgba(254, 254, 254, 0.6);
             opacity: 0.3; }
-        .compony__block .company__employees-executive__team-wrapper__item-text {
-          font-family: 'Commissioner';
+        .company__block .company__employees-executive__team-wrapper__item-text {
           font-style: normal;
           font-weight: 400;
           font-size: 16px;
@@ -1170,7 +1142,7 @@ main.home__block {
           display: flex;
           align-items: flex-end;
           color: #83848A; }
-  .compony__block .company__employees-advisors__and__directors h3 {
+  .company__block .company__employees-advisors__and__directors h3 {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 500;
@@ -1181,20 +1153,19 @@ main.home__block {
     color: #F6F6F6;
     width: fit-content;
     margin: 0 auto 40px auto; }
-  .compony__block .company__employees-advisors__and__directors-wrapper {
+  .company__block .company__employees-advisors__and__directors-wrapper {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 16px;
     margin: 0 200px; }
-    .compony__block .company__employees-advisors__and__directors-wrapper__item {
+    .company__block .company__employees-advisors__and__directors-wrapper__item {
       background: #27222A;
       border-radius: 16px;
       padding: 32px;
       display: flex;
       flex-direction: column;
       justify-content: space-between; }
-      .compony__block .company__employees-advisors__and__directors-wrapper__item h4 {
-        font-family: 'JetBrains Mono';
+      .company__block .company__employees-advisors__and__directors-wrapper__item h4 {
         font-style: normal;
         font-weight: 500;
         font-size: 19.3846px;
@@ -1202,8 +1173,7 @@ main.home__block {
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF; }
-      .compony__block .company__employees-advisors__and__directors-wrapper__item p.post {
-        font-family: 'Commissioner';
+      .company__block .company__employees-advisors__and__directors-wrapper__item p.post {
         font-style: normal;
         font-weight: 400;
         font-size: 24px;
@@ -1211,8 +1181,7 @@ main.home__block {
         color: rgba(254, 254, 254, 0.6);
         opacity: 0.3;
         margin-bottom: 110px; }
-      .compony__block .company__employees-advisors__and__directors-wrapper__item p.text {
-        font-family: 'Commissioner';
+      .company__block .company__employees-advisors__and__directors-wrapper__item p.text {
         font-style: normal;
         font-weight: 400;
         font-size: 16px;
@@ -1222,18 +1191,17 @@ main.home__block {
         color: #83848A; }
 
 @media (max-width: 1439px) {
-  .compony__block .company__employees-executive__team-wrapper {
+  .company__block .company__employees-executive__team-wrapper {
     margin: 0 70px; }
-  .compony__block .company__employees-advisors__and__directors-wrapper {
+  .company__block .company__employees-advisors__and__directors-wrapper {
     margin: 0 70px; } }
 @media (max-width: 1023px) {
-  .compony__block .data__science h1 {
+  .company__block .data__science h1 {
     font-size: 38px;
     padding: 0 10px;
     margin-bottom: 32px; }
-  .compony__block .data__science-subtitle {
+  .company__block .data__science-subtitle {
     display: block;
-    font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -1243,58 +1211,58 @@ main.home__block {
     color: #FFFFFF;
     opacity: 0.6;
     margin-bottom: 68px; }
-  .compony__block .data__science-wrapper {
+  .company__block .data__science-wrapper {
     grid-template-columns: 1fr;
     grid-row-gap: 9px; }
-    .compony__block .data__science-wrapper__item {
+    .company__block .data__science-wrapper__item {
       display: flex;
       flex-direction: column;
       align-items: center;
       row-gap: 29px; }
-      .compony__block .data__science-wrapper__item:nth-child(1) {
+      .company__block .data__science-wrapper__item:nth-child(1) {
         order: 3; }
-      .compony__block .data__science-wrapper__item:nth-child(2) {
+      .company__block .data__science-wrapper__item:nth-child(2) {
         order: 2; }
-      .compony__block .data__science-wrapper__item:nth-child(3) {
+      .company__block .data__science-wrapper__item:nth-child(3) {
         order: 1; }
-      .compony__block .data__science-wrapper__item-text:nth-child(3) {
+      .company__block .data__science-wrapper__item-text:nth-child(3) {
         margin: 0; }
-  .compony__block .company__employees-founder blockquote {
+  .company__block .company__employees-founder blockquote {
     padding: 0 20px;
     font-size: 24px; }
-  .compony__block .company__employees-executive__team h3 {
+  .company__block .company__employees-executive__team h3 {
     font-size: 26px;
     margin-bottom: 24px; }
-  .compony__block .company__employees-executive__team-wrapper {
+  .company__block .company__employees-executive__team-wrapper {
     margin: 0 10px; }
-  .compony__block .company__employees-advisors__and__directors h3 {
+  .company__block .company__employees-advisors__and__directors h3 {
     font-size: 26px;
     margin-bottom: 24px; }
-  .compony__block .company__employees-advisors__and__directors-wrapper {
+  .company__block .company__employees-advisors__and__directors-wrapper {
     margin: 0 10px; } }
 @media (max-width: 767px) {
-  .compony__block .data__science {
+  .company__block .data__science {
     margin-bottom: 52px; }
-    .compony__block .data__science-wrapper {
+    .company__block .data__science-wrapper {
       margin: 0 10px; }
-  .compony__block .company__employees-founder {
+  .company__block .company__employees-founder {
     margin-bottom: 67px; }
-  .compony__block .company__employees-executive__team {
+  .company__block .company__employees-executive__team {
     margin-bottom: 40px; }
-    .compony__block .company__employees-executive__team-wrapper {
+    .company__block .company__employees-executive__team-wrapper {
       grid-template-columns: 1fr;
       grid-row-gap: 16px; }
-      .compony__block .company__employees-executive__team-wrapper__item {
+      .company__block .company__employees-executive__team-wrapper__item {
         padding: 20px; }
-  .compony__block .company__employees-advisors__and__directors-wrapper {
+  .company__block .company__employees-advisors__and__directors-wrapper {
     grid-template-columns: 1fr;
     grid-row-gap: 16px; }
-    .compony__block .company__employees-advisors__and__directors-wrapper__item {
+    .company__block .company__employees-advisors__and__directors-wrapper__item {
       padding: 16px; } }
 @media (max-width: 425px) {
-  .compony__block .data__science h1 span {
+  .company__block .data__science h1 span {
     white-space: pre; }
-    .compony__block .data__science h1 span::before {
+    .company__block .data__science h1 span::before {
       content: "\a" !important; } }
 footer {
   background: #FFFFFF; }
@@ -1354,7 +1322,6 @@ footer {
         line-height: 100%;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        font-family: 'JetBrains Mono', monospace;
         color: #FFFFFF; }
         .footer__wrapper .footer__nav a:nth-child(2) {
           margin: 0 35px; }
