@@ -35,7 +35,7 @@
       background: rgba(70, 62, 160, 0.7);
       backdrop-filter: blur(26px);
       border-radius: 16px;
-      padding: 16px 24px;
+      padding: 42px 24px;
 
       li {
 
@@ -56,6 +56,10 @@
           opacity: 1;
           margin-bottom: 8px;
           white-space: pre;
+          
+          @media (max-width: 767px) {
+            margin-bottom: 0;
+          }
 
           span::before {
             content: '\A';
@@ -106,7 +110,8 @@
         background: rgba(70, 62, 160, 0.5);
         backdrop-filter: blur(30px);
         border-radius: 16px;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         column-gap: 48px;
         align-items: center;
 
@@ -265,7 +270,7 @@
     margin-top: 60px;
 
     .cyber__risk__info {
-      margin-bottom: 26px;
+      margin-bottom: 56px;
 
       h1 {
         font-size: 39px;
@@ -289,6 +294,10 @@
 
       &-list {
         margin: 0 10px;
+
+        &__item-text .text{
+          font-size: 18px;
+        }
       }
     }
 
@@ -348,13 +357,14 @@
 
       &-list {
         &__item {
-          flex-direction: column;
+          grid-template-columns: auto;
           align-items: normal;
           row-gap: 48px;
           padding: 56px 32px;
 
           &-picture {
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 156px 1fr;
             column-gap: 33px;
             max-width: none;
 
@@ -415,6 +425,14 @@
             }
           }
         }
+      }
+    }
+
+    .about__cyber__protection-list__item-picture {
+      grid-template-columns: 126px 1fr;
+
+      svg {
+        width: 100%;
       }
     }
   }

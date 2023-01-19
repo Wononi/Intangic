@@ -20,9 +20,8 @@ main.home__block {
     line-height: 140%;
     text-align: center;
     letter-spacing: -0.02em;
-    opacity: 0.6;
-    color: #ffffff;
-    width: 40%;
+    color: #9D9C9D;
+    width: 43%;
   }
 
   a {
@@ -53,6 +52,8 @@ main.home__block {
   background: #1E1E7D;
   padding-left: 146px;
   padding-right: 146px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
   padding-bottom: 466px;
@@ -203,6 +204,8 @@ main.home__block {
   margin-top: 32px;
   background: #00005F;
   padding-bottom: 92px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
   overflow: hidden;
@@ -426,6 +429,7 @@ main.home__block {
 
     h2 {
       width: 100%;
+      padding-top: 50px;
     }
 
     p {

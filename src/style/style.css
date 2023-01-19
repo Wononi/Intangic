@@ -390,7 +390,7 @@ header {
     header .navigation {
       display: block;
       position: fixed;
-      bottom: 50px;
+      bottom: 25px;
       z-index: 100;
       left: 50%;
       transform: translate(-50%, 0);
@@ -419,9 +419,8 @@ main.home__block {
     line-height: 140%;
     text-align: center;
     letter-spacing: -0.02em;
-    opacity: 0.6;
-    color: #ffffff;
-    width: 40%; }
+    color: #9D9C9D;
+    width: 43%; }
   .welcome__block a {
     width: fit-content;
     padding: 12px 14px;
@@ -445,6 +444,8 @@ main.home__block {
   background: #1E1E7D;
   padding-left: 146px;
   padding-right: 146px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
   padding-bottom: 466px;
@@ -560,6 +561,8 @@ main.home__block {
   margin-top: 32px;
   background: #00005F;
   padding-bottom: 92px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
   overflow: hidden; }
@@ -707,7 +710,8 @@ main.home__block {
     padding-left: 25px;
     padding-right: 25px; }
     .first__content__block h2 {
-      width: 100%; }
+      width: 100%;
+      padding-top: 50px; }
     .first__content__block p {
       width: 100%; }
 
@@ -786,7 +790,7 @@ main.home__block {
       background: rgba(70, 62, 160, 0.7);
       backdrop-filter: blur(26px);
       border-radius: 16px;
-      padding: 16px 24px; }
+      padding: 42px 24px; }
       .coverage__block .cyber__risk__info ul li:nth-child(2) {
         border-right: 1px solid rgba(225, 225, 225, 0.1);
         border-left: 1px solid rgba(225, 225, 225, 0.1); }
@@ -802,6 +806,9 @@ main.home__block {
         opacity: 1;
         margin-bottom: 8px;
         white-space: pre; }
+        @media (max-width: 767px) {
+          .coverage__block .cyber__risk__info ul li p.h3-heading {
+            margin-bottom: 0; } }
         .coverage__block .cyber__risk__info ul li p.h3-heading span::before {
           content: '\A'; }
       .coverage__block .cyber__risk__info ul li p.text {
@@ -837,7 +844,8 @@ main.home__block {
         background: rgba(70, 62, 160, 0.5);
         backdrop-filter: blur(30px);
         border-radius: 16px;
-        display: flex;
+        display: grid;
+        grid-template-columns: auto auto;
         column-gap: 48px;
         align-items: center; }
         .coverage__block .about__cyber__protection-list__item-picture {
@@ -944,7 +952,7 @@ main.home__block {
   .coverage__block {
     margin-top: 60px; }
     .coverage__block .cyber__risk__info {
-      margin-bottom: 26px; }
+      margin-bottom: 56px; }
       .coverage__block .cyber__risk__info h1 {
         font-size: 39px; }
       .coverage__block .cyber__risk__info-subtitle {
@@ -957,6 +965,8 @@ main.home__block {
       margin-bottom: 20px; }
     .coverage__block .about__cyber__protection-list {
       margin: 0 10px; }
+      .coverage__block .about__cyber__protection-list__item-text .text {
+        font-size: 18px; }
     .coverage__block .customer__dashboard {
       margin: 0 10px; }
       .coverage__block .customer__dashboard h2 {
@@ -982,12 +992,13 @@ main.home__block {
   .coverage__block .about__cyber__protection h2 {
     padding: 0 10px; }
   .coverage__block .about__cyber__protection-list__item {
-    flex-direction: column;
+    grid-template-columns: auto;
     align-items: normal;
     row-gap: 48px;
     padding: 56px 32px; }
     .coverage__block .about__cyber__protection-list__item-picture {
-      flex-direction: row;
+      display: grid;
+      grid-template-columns: 156px 1fr;
       column-gap: 33px;
       max-width: none; }
       .coverage__block .about__cyber__protection-list__item-picture .signature {
@@ -1010,7 +1021,11 @@ main.home__block {
   .coverage__block .cyber__risk__info ul li p.h3-heading span::before {
     content: '\A'; }
   .coverage__block .cyber__risk__info ul li p.text span::before {
-    content: '\A'; } }
+    content: '\A'; }
+  .coverage__block .about__cyber__protection-list__item-picture {
+    grid-template-columns: 126px 1fr; }
+    .coverage__block .about__cyber__protection-list__item-picture svg {
+      width: 100%; } }
 .company__block {
   margin-top: 127px; }
   .company__block .data__science {
@@ -1156,8 +1171,8 @@ main.home__block {
     margin: 0 auto 40px auto; }
   .company__block .company__employees-advisors__and__directors-wrapper {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 16px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 16px;
     margin: 0 200px; }
     .company__block .company__employees-advisors__and__directors-wrapper__item {
       background: #27222A;
@@ -1200,17 +1215,6 @@ main.home__block {
   .company__block .data__science h1 {
     font-size: 38px;
     padding: 0 10px;
-    margin-bottom: 32px; }
-  .company__block .data__science-subtitle {
-    display: block;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 140%;
-    text-align: center;
-    letter-spacing: -0.02em;
-    color: #FFFFFF;
-    opacity: 0.6;
     margin-bottom: 68px; }
   .company__block .data__science-wrapper {
     grid-template-columns: 1fr;
@@ -1218,16 +1222,15 @@ main.home__block {
     .company__block .data__science-wrapper__item {
       display: flex;
       flex-direction: column;
-      align-items: center;
-      row-gap: 29px; }
+      align-items: center; }
       .company__block .data__science-wrapper__item:nth-child(1) {
         order: 3; }
       .company__block .data__science-wrapper__item:nth-child(2) {
         order: 2; }
       .company__block .data__science-wrapper__item:nth-child(3) {
         order: 1; }
-      .company__block .data__science-wrapper__item-text:nth-child(3) {
-        margin: 0; }
+      .company__block .data__science-wrapper__item-text {
+        text-align: center; }
   .company__block .company__employees-founder blockquote {
     padding: 0 20px;
     font-size: 24px; }
@@ -1305,7 +1308,7 @@ footer {
     margin-top: 17px; } }
 @media (max-width: 767px) {
   .footer__wrapper {
-    padding: 30px 16px 112px 16px; }
+    padding: 30px 16px 87px 16px; }
     .footer__wrapper .footer__links a:nth-child(2) {
       margin: 0 30px; }
     .footer__wrapper .footer__nav {
