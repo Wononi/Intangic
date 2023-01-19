@@ -99,6 +99,20 @@ header {
   max-width: 1400px;
   margin: 0 auto; }
 
+.second__content__block {
+  opacity: 0; }
+
+.element__show {
+  animation: show-element 500ms 1;
+  opacity: 1; }
+
+@keyframes show-element {
+  0% {
+    transform: translateY(0);
+    opacity: 0; }
+  50% {
+    transform: translateY(100%);
+    opacity: 1; } }
 .wrapper {
   position: relative;
   overflow: hidden; }

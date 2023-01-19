@@ -125,3 +125,17 @@ renderer.setAnimationLoop(() => {
     p.rotation.y = t * 0.05;
     renderer.render(scene, camera);
 });
+
+
+// animation
+const observer = new IntersectionObserver(entries => {
+    // перебор записей
+    entries.forEach(entry => {
+        // если элемент появился
+        if (entry.isIntersecting) {
+            // добавить ему CSS-класс
+            entry.target.classList.add('element__show');
+        }
+    });
+});
+observer.observe(document.querySelector('.second__content__block'));
