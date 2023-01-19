@@ -61,7 +61,9 @@ body {
   background: -moz-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: -webkit-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
-  background-size: 1263px 1253px; }
+  background-size: 1263px 1253px;
+  animation: 3s linear 0s normal none infinite running rot;
+  -webkit-animation: 3s linear 0s normal none infinite running rot; }
   @media (max-width: 1600px) {
     .sphere__background {
       left: 662px; } }
@@ -79,6 +81,18 @@ body {
       left: 132px;
       opacity: 1; } }
 
+@keyframes rot {
+  0% {
+    transform: scale(0.8); }
+  50% {
+    transform: scale(1); }
+  100% {
+    transform: scale(0.8); } }
+@-webkit-keyframes rot {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 main,
 .footer__wrapper,
 header {
@@ -362,7 +376,27 @@ header {
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0.04em;
-    text-decoration: none; }
+    text-decoration: none;
+    transition: background 500ms ease;
+    overflow: hidden;
+    position: relative; }
+    header .application__btn:hover {
+      background: rgba(225, 225, 225, 0.4); }
+      header .application__btn:hover::before {
+        bottom: 50px; }
+      header .application__btn:hover::after {
+        bottom: 12px; }
+    header .application__btn::before {
+      content: 'application form';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease; }
+    header .application__btn::after {
+      content: 'application form';
+      position: absolute;
+      bottom: -50px;
+      left: 14px;
+      transition: all 500ms ease; }
   header .download__page__link {
     width: fit-content;
     padding: 6px 14px;

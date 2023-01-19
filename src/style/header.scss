@@ -32,6 +32,36 @@ header {
     line-height: 100%;
     letter-spacing: 0.04em;
     text-decoration: none;
+    transition: background 500ms ease;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      background: rgba(225, 225, 225, 0.4);
+
+      &::before {
+        bottom: 50px;
+      }
+
+      &::after {
+        bottom: 12px;
+      }
+    }
+
+    &::before {
+      content: 'application form';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
+    }
+
+    &::after {
+      content: 'application form';
+      position: absolute;
+      bottom: -50px;
+      left: 14px;
+      transition: all 500ms ease;
+    }
   }
 
   .download__page__link {
