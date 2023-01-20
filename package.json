@@ -37,6 +37,7 @@
     "webpack-cli": "^5.0.1"
   },
   "dependencies": {
+    "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
     "three": "^0.148.0"
   }

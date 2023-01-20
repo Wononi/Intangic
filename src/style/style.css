@@ -110,11 +110,11 @@ header {
   max-width: 1400px;
   margin: 0 auto; }
 
-.second__content__block {
+.animate__block {
   opacity: 0; }
 
 .element__show {
-  animation: show-element 2s 1;
+  animation: show-element 1.5s 1;
   opacity: 1; }
 
 @keyframes show-element {
@@ -432,9 +432,28 @@ header {
     letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 100%;
-    color: #050402; }
-    header .download__page__link svg,
-    header .download__page__link span {
+    color: #050402;
+    overflow: hidden;
+    position: relative; }
+    header .download__page__link svg {
+      vertical-align: middle; }
+    header .download__page__link:hover {
+      background: rgba(255, 255, 255, 0.8); }
+      header .download__page__link:hover::before {
+        bottom: 12px; }
+      header .download__page__link:hover::after {
+        bottom: 50px; }
+    header .download__page__link::before {
+      content: 'get in touch';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease; }
+    header .download__page__link::after {
+      content: 'get in touch';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle; }
 
 @media (max-width: 1439px) {
@@ -523,8 +542,6 @@ main.home__block {
 
 .first__content__block {
   background: #1E1E7D;
-  padding-left: 146px;
-  padding-right: 146px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -534,7 +551,8 @@ main.home__block {
   .first__content__block-wrapper {
     position: relative;
     z-index: 5;
-    border-radius: 16px; }
+    border-radius: 16px;
+    padding: 0 146px; }
   .first__content__block h2 {
     font-weight: 700;
     font-size: 48px;
@@ -1064,13 +1082,34 @@ main.home__block {
       border-radius: 4px;
       display: block;
       margin: 0 auto 5px auto;
-      width: fit-content; }
-      .coverage__block .customer__dashboard a svg,
-      .coverage__block .customer__dashboard a span {
+      width: fit-content;
+      overflow: hidden;
+      position: relative; }
+      .coverage__block .customer__dashboard a svg {
         vertical-align: middle; }
-    .coverage__block .customer__dashboard-img img {
-      margin: 0 auto;
-      display: block; }
+      .coverage__block .customer__dashboard a:hover {
+        background: rgba(255, 255, 255, 0.1); }
+        .coverage__block .customer__dashboard a:hover::before {
+          bottom: 18px; }
+        .coverage__block .customer__dashboard a:hover::after {
+          bottom: 50px; }
+      .coverage__block .customer__dashboard a::before {
+        content: 'get in touch';
+        position: absolute;
+        bottom: -50px;
+        left: 46px;
+        transition: all 500ms ease; }
+      .coverage__block .customer__dashboard a::after {
+        content: 'get in touch';
+        position: relative;
+        bottom: 0;
+        transition: all 500ms ease;
+        vertical-align: middle; }
+    .coverage__block .customer__dashboard-img {
+      border-radius: 16px; }
+      .coverage__block .customer__dashboard-img img {
+        margin: 0 auto;
+        display: block; }
 
 @media (max-width: 1439px) {
   .coverage__block .cyber__risk__info {

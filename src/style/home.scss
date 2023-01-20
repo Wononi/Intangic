@@ -79,8 +79,6 @@ main.home__block {
 
 .first__content__block {
   background: #1E1E7D;
-  padding-left: 146px;
-  padding-right: 146px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -92,6 +90,7 @@ main.home__block {
     position: relative;
     z-index: 5;
     border-radius: 16px;
+    padding: 0 146px;
   }
 
   h2 {

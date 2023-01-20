@@ -53,11 +53,10 @@
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <use xlink:href="#arrow-right" stroke="black"/>
             </svg>
-            <span>get in touch</span>
         </a>
     </header>
     <main class="download__form__block">
-        <section>
+        <section class="animate__block">
             <div class="left__content">
                 <h2>
                     Intangible Assets — Insurance Application Form for large public companies
@@ -72,14 +71,16 @@
                 <p>
                     We do the rest.
                 </p>
-                <a href="#">
+                <a href="#" class="left__content-link">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 3.75L12 20.25" stroke="white" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M18.75 13.5L12 20.25L5.25 13.5" stroke="white" stroke-linecap="round"
                               stroke-linejoin="round"/>
                     </svg>
-                    <span>download application form</span>
-                    <span>(pdf, 53kb)</span>
+                    <span class="left__content-link__span-one">download application form</span>
+                    <span class="left__content-link__span-one__hide">download application form</span>
+                    <span class="left__content-link__span-two">(pdf, 53kb)</span>
+                    <span class="left__content-link__span-two__hide">(pdf, 53kb)</span>
                 </a>
             </div>
             <div class="right-content">
@@ -123,6 +124,22 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.querySelector('.download__form__block .left__content a').onmouseout = () => {
+            document.querySelector('.left__content-link__span-one').classList.remove('one-show')
+            document.querySelector('.left__content-link__span-one__hide').classList.remove('two-show')
+            document.querySelector('.left__content-link__span-two').classList.remove('one-show')
+            document.querySelector('.left__content-link__span-two__hide').classList.remove('two-show')
+        }
+
+        document.querySelector('.download__form__block .left__content a').onmouseover = () => {
+            document.querySelector('.left__content-link__span-one').classList.add('one-show')
+            document.querySelector('.left__content-link__span-one__hide').classList.add('two-show')
+            document.querySelector('.left__content-link__span-two').classList.add('one-show')
+            document.querySelector('.left__content-link__span-two__hide').classList.add('two-show')
+        }
+    </script>
+    <script src="./assets/js/index.bundle.js"></script>
 </div>
 </body>
 </html>

@@ -44,12 +44,37 @@
       line-height: 100%;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      width: fit-content; }
-      .download__form__block section .left__content a span:nth-child(3) {
+      width: fit-content;
+      overflow: hidden;
+      position: relative;
+      transition: background 500ms ease; }
+      .download__form__block section .left__content a:hover {
+        background: rgba(0, 0, 0, 0.8); }
+      .download__form__block section .left__content a span:nth-child(4) {
+        opacity: 0.5; }
+      .download__form__block section .left__content a span:nth-child(5) {
         opacity: 0.5; }
       .download__form__block section .left__content a svg,
       .download__form__block section .left__content a span {
         vertical-align: middle; }
+    .download__form__block section .left__content-link__span-one, .download__form__block section .left__content-link__span-two {
+      position: relative;
+      bottom: 0; }
+    .download__form__block section .left__content-link__span-one, .download__form__block section .left__content-link__span-one__hide, .download__form__block section .left__content-link__span-two, .download__form__block section .left__content-link__span-two__hide {
+      transition: all 500ms ease; }
+    .download__form__block section .left__content-link__span-one__hide, .download__form__block section .left__content-link__span-two__hide {
+      position: absolute;
+      bottom: -50px; }
+    .download__form__block section .left__content-link__span-one__hide {
+      left: 46px; }
+    .download__form__block section .left__content-link__span-two__hide {
+      left: 246px; }
+
+.one-show {
+  bottom: 50px !important; }
+
+.two-show {
+  bottom: 18px !important; }
 
 @media (max-width: 1439px) {
   .download__form__block section {
@@ -215,12 +240,12 @@ header {
   margin: 0 auto;
 }
 
-.second__content__block {
+.animate__block {
   opacity: 0;
 }
 
 .element__show {
-  animation: show-element 2s 1;
+  animation: show-element 1.5s 1;
   opacity: 1;
 }
 
@@ -614,9 +639,33 @@ header .download__page__link {
   font-size: 12px;
   line-height: 100%;
   color: #050402;
+  overflow: hidden;
+  position: relative;
 }
-header .download__page__link svg,
-header .download__page__link span {
+header .download__page__link svg {
+  vertical-align: middle;
+}
+header .download__page__link:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+header .download__page__link:hover::before {
+  bottom: 12px;
+}
+header .download__page__link:hover::after {
+  bottom: 50px;
+}
+header .download__page__link::before {
+  content: "get in touch";
+  position: absolute;
+  bottom: -50px;
+  left: 46px;
+  transition: all 500ms ease;
+}
+header .download__page__link::after {
+  content: "get in touch";
+  position: relative;
+  bottom: 0;
+  transition: all 500ms ease;
   vertical-align: middle;
 }
 
@@ -728,8 +777,6 @@ main.home__block {
 
 .first__content__block {
   background: #1E1E7D;
-  padding-left: 146px;
-  padding-right: 146px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
@@ -741,6 +788,7 @@ main.home__block {
   position: relative;
   z-index: 5;
   border-radius: 16px;
+  padding: 0 146px;
 }
 .first__content__block h2 {
   font-weight: 700;
@@ -1397,10 +1445,37 @@ main.home__block {
   display: block;
   margin: 0 auto 5px auto;
   width: fit-content;
+  overflow: hidden;
+  position: relative;
 }
-.coverage__block .customer__dashboard a svg,
-.coverage__block .customer__dashboard a span {
+.coverage__block .customer__dashboard a svg {
   vertical-align: middle;
+}
+.coverage__block .customer__dashboard a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.coverage__block .customer__dashboard a:hover::before {
+  bottom: 18px;
+}
+.coverage__block .customer__dashboard a:hover::after {
+  bottom: 50px;
+}
+.coverage__block .customer__dashboard a::before {
+  content: "get in touch";
+  position: absolute;
+  bottom: -50px;
+  left: 46px;
+  transition: all 500ms ease;
+}
+.coverage__block .customer__dashboard a::after {
+  content: "get in touch";
+  position: relative;
+  bottom: 0;
+  transition: all 500ms ease;
+  vertical-align: middle;
+}
+.coverage__block .customer__dashboard-img {
+  border-radius: 16px;
 }
 .coverage__block .customer__dashboard-img img {
   margin: 0 auto;

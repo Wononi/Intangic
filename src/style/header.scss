@@ -75,9 +75,38 @@ header {
     font-size: 12px;
     line-height: 100%;
     color: #050402;
+    overflow: hidden;
+    position: relative;
 
-    svg,
-    span{
+    svg{
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.8);
+
+      &::before {
+        bottom: 12px;
+      }
+
+      &::after {
+        bottom: 50px;
+      }
+    }
+
+    &::before {
+      content: 'get in touch';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease;
+    }
+
+    &::after {
+      content: 'get in touch';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle;
     }
   }

@@ -1,6 +1,7 @@
 // webpack.config.js
 const path = require('path');
 const webpack = require('webpack');
+const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserWebpackPlugin = require('terser-webpack-plugin');
@@ -25,13 +26,18 @@ const excludeSourceMap = () => {
 module.exports = {
     context: path.resolve(__dirname, 'src'),
     mode: 'development',
-    entry: ['./js/index.js', './style/style.scss'],
+    // entry: ['./js/index.js', './js/animation-galaxy-sphere.js', './style/style.scss'],
+    entry: {
+        index: './js/index.js',
+        animation: './js/animation-galaxy-sphere.js',
+    },
     output: {
-        filename: 'index.bundle.js',
-        path: path.resolve(__dirname, './assets/js')
+        path: path.resolve(__dirname, './assets/js'),
+        filename: '[name].bundle.js'
     },
     optimization: optimization(),
     plugins: [
+        new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: '../css/style.css'
         }),

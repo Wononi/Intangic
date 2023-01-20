@@ -37,12 +37,37 @@
       line-height: 100%;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      width: fit-content; }
-      .download__form__block section .left__content a span:nth-child(3) {
+      width: fit-content;
+      overflow: hidden;
+      position: relative;
+      transition: background 500ms ease; }
+      .download__form__block section .left__content a:hover {
+        background: rgba(0, 0, 0, 0.8); }
+      .download__form__block section .left__content a span:nth-child(4) {
+        opacity: 0.5; }
+      .download__form__block section .left__content a span:nth-child(5) {
         opacity: 0.5; }
       .download__form__block section .left__content a svg,
       .download__form__block section .left__content a span {
         vertical-align: middle; }
+    .download__form__block section .left__content-link__span-one, .download__form__block section .left__content-link__span-two {
+      position: relative;
+      bottom: 0; }
+    .download__form__block section .left__content-link__span-one, .download__form__block section .left__content-link__span-one__hide, .download__form__block section .left__content-link__span-two, .download__form__block section .left__content-link__span-two__hide {
+      transition: all 500ms ease; }
+    .download__form__block section .left__content-link__span-one__hide, .download__form__block section .left__content-link__span-two__hide {
+      position: absolute;
+      bottom: -50px; }
+    .download__form__block section .left__content-link__span-one__hide {
+      left: 46px; }
+    .download__form__block section .left__content-link__span-two__hide {
+      left: 246px; }
+
+.one-show {
+  bottom: 50px !important; }
+
+.two-show {
+  bottom: 18px !important; }
 
 @media (max-width: 1439px) {
   .download__form__block section {
