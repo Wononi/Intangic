@@ -91,7 +91,6 @@ main.home__block {
     z-index: 5;
     border-radius: 16px;
     padding: 0 146px;
-    overflow: hidden;
   }
 
   h2 {
@@ -244,6 +243,7 @@ main.home__block {
     mix-blend-mode: normal;
     filter: blur(130px);
     z-index: 3;
+    border-radius: 100%;
     
     @media (max-width: 1100px) {
       left: 451px;

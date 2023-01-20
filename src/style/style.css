@@ -42,7 +42,6 @@ body {
 .download__form__block-sphere__two,
 .download__form__block-sphere__three,
 .first__content__block-sphere__bg-one,
-.first__content__block-sphere__bg-two,
 .second__content__block-sphere__bg-one,
 .second__content__block-sphere__bg-two {
   transform: translate3d(0, 0, 0); }
@@ -552,8 +551,7 @@ main.home__block {
     position: relative;
     z-index: 5;
     border-radius: 16px;
-    padding: 0 146px;
-    overflow: hidden; }
+    padding: 0 146px; }
   .first__content__block h2 {
     font-weight: 700;
     font-size: 48px;
@@ -666,7 +664,8 @@ main.home__block {
     background-size: 1263px 1253px;
     mix-blend-mode: normal;
     filter: blur(130px);
-    z-index: 3; }
+    z-index: 3;
+    border-radius: 100%; }
     @media (max-width: 1100px) {
       .first__content__block-sphere__bg-two {
         left: 451px; } }
@@ -1255,18 +1254,21 @@ main.home__block {
         .company__block .data__science-wrapper__item:nth-child(3) {
           position: relative; }
   .company__block .company__employees-founder {
-    margin-bottom: 129px; }
+    margin: 0 220px 47px 220px;
+    padding: 72px 120px;
+    background: #27222A;
+    border-radius: 16px; }
     .company__block .company__employees-founder blockquote {
       font-family: 'Commissioner';
       font-style: normal;
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 120%;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 140%;
+      display: flex;
+      align-items: flex-end;
       text-align: center;
-      letter-spacing: -0.01em;
-      color: #FFFFFF;
-      max-width: 900px;
-      margin: 0 auto 41px auto; }
+      color: #83848A;
+      margin-bottom: 70px; }
     .company__block .company__employees-founder figcaption {
       font-family: 'JetBrains Mono';
       font-style: normal;
@@ -1386,6 +1388,8 @@ main.home__block {
         color: #83848A; }
 
 @media (max-width: 1439px) {
+  .company__block .company__employees-founder {
+    margin: 0 90px 47px 90px; }
   .company__block .company__employees-executive__team-wrapper {
     margin: 0 70px; }
   .company__block .company__employees-advisors__and__directors-wrapper {
@@ -1410,9 +1414,12 @@ main.home__block {
         order: 1; }
       .company__block .data__science-wrapper__item-text {
         text-align: center; }
-  .company__block .company__employees-founder blockquote {
-    padding: 0 20px;
-    font-size: 24px; }
+  .company__block .company__employees-founder {
+    margin: 0 30px 47px 30px;
+    padding: 72px 10px; }
+    .company__block .company__employees-founder blockquote {
+      padding: 0 20px;
+      font-size: 18px; }
   .company__block .company__employees-executive__team h3 {
     font-size: 26px;
     margin-bottom: 24px; }
@@ -1429,7 +1436,7 @@ main.home__block {
     .company__block .data__science-wrapper {
       margin: 0 10px; }
   .company__block .company__employees-founder {
-    margin-bottom: 67px; }
+    margin: 0 10px 47px 10px; }
   .company__block .company__employees-executive__team {
     margin-bottom: 40px; }
     .company__block .company__employees-executive__team-wrapper {

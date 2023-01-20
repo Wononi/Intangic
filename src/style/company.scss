@@ -78,19 +78,22 @@
 
   .company__employees {
     &-founder {
-      margin-bottom: 129px;
+      margin: 0 220px 47px 220px;
+      padding: 72px 120px;
+      background: #27222A;
+      border-radius: 16px;;
 
       blockquote {
         font-family: 'Commissioner';
         font-style: normal;
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 120%;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        display: flex;
+        align-items: flex-end;
         text-align: center;
-        letter-spacing: -0.01em;
-        color: #FFFFFF;
-        max-width: 900px;
-        margin: 0 auto 41px auto;
+        color: #83848A;
+        margin-bottom: 70px;
       }
 
       figcaption {
@@ -252,6 +255,10 @@
 @media (max-width: 1439px) {
   .company__block {
     .company__employees {
+      &-founder {
+        margin: 0 90px 47px 90px;
+      }
+
       &-executive__team {
         &-wrapper {
           margin: 0 70px;
@@ -306,9 +313,11 @@
 
     .company__employees {
       &-founder {
+        margin: 0 30px 47px 30px;
+        padding: 72px 10px;
         blockquote {
           padding: 0 20px;
-          font-size: 24px;
+          font-size: 18px;
         }
       }
 
@@ -349,7 +358,7 @@
 
     .company__employees {
       &-founder {
-        margin-bottom: 67px;
+        margin: 0 10px 47px 10px;
       }
 
       &-executive__team {
