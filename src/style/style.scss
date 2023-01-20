@@ -36,6 +36,7 @@ body {
 }
 
 .sphere__background,
+.sphere__background__two,
 .coverage__block-sphere__one,
 .coverage__block-sphere__two,
 .coverage__block-sphere__three,
@@ -92,6 +93,33 @@ body {
   @media (max-width: 400px) {
     left: 132px;
     opacity: 1;
+  }
+}
+
+.sphere__background__two {
+  position: absolute;
+  width: 1145px;
+  height: 1137px;
+  left: -412px;
+  top: 2432px;
+  background: #2f5af2;
+  background: linear-gradient(180deg, rgba(47, 90, 242, 0.6) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  filter: blur(130px);
+  border-radius: 100%;
+  background-size: 1145px 1137px;
+  
+  @media (max-width: 1340px) {
+    top: 2822px;
+  }
+
+  @media (max-width: 1023px) {
+    top: 2451px;
+  }
+
+  @media (max-width: 767px) {
+    top: 2122px;
   }
 }
 

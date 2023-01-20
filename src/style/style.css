@@ -29,6 +29,7 @@ body {
   position: relative; }
 
 .sphere__background,
+.sphere__background__two,
 .coverage__block-sphere__one,
 .coverage__block-sphere__two,
 .coverage__block-sphere__three,
@@ -80,6 +81,29 @@ body {
     .sphere__background {
       left: 132px;
       opacity: 1; } }
+
+.sphere__background__two {
+  position: absolute;
+  width: 1145px;
+  height: 1137px;
+  left: -412px;
+  top: 2432px;
+  background: #2f5af2;
+  background: linear-gradient(180deg, rgba(47, 90, 242, 0.6) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  filter: blur(130px);
+  border-radius: 100%;
+  background-size: 1145px 1137px; }
+  @media (max-width: 1340px) {
+    .sphere__background__two {
+      top: 2822px; } }
+  @media (max-width: 1023px) {
+    .sphere__background__two {
+      top: 2451px; } }
+  @media (max-width: 767px) {
+    .sphere__background__two {
+      top: 2122px; } }
 
 @keyframes rot {
   0% {
@@ -449,6 +473,9 @@ header {
       padding: 19px 32px; }
       header .navigation a {
         color: #FFFFFF !important; } }
+@media (max-width: 389px) {
+  header .navigation a:nth-child(2) {
+    margin: 0 16px; } }
 main.home__block {
   margin-top: 127px; }
 
@@ -682,6 +709,43 @@ main.home__block {
     @media (max-width: 650px) {
       .second__content__block-sphere__bg-two {
         left: -17px; } }
+
+.trusted__by__industry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px; }
+  .trusted__by__industry h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF; }
+  .trusted__by__industry p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 14px 0 44px 0; }
+  @media (max-width: 1023px) {
+    .trusted__by__industry {
+      margin-top: 45px; }
+      .trusted__by__industry h2 {
+        font-size: 32px; }
+      .trusted__by__industry p {
+        font-size: 18px;
+        margin: 12px 0 22px 0; } }
+  @media (max-width: 389px) {
+    .trusted__by__industry h2 {
+      font-size: 29px; }
+    .trusted__by__industry p {
+      font-size: 13px; } }
 
 @media (max-width: 1439px) {
   .first__content__block {

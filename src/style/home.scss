@@ -297,6 +297,58 @@ main.home__block {
   }
 }
 
+.trusted__by__industry {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 90px;
+
+  h2 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    text-align: center;
+    letter-spacing: -0.01em;
+    color: #FFFFFF;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -0.02em;
+    color: #FFFFFF;
+    opacity: 0.5;
+    margin: 14px 0 44px 0;
+  }
+  
+  @media (max-width: 1023px) {
+    margin-top: 45px;
+
+    h2 {
+      font-size: 32px;
+    }
+
+    p {
+      font-size: 18px;
+      margin: 12px 0 22px 0;
+    }
+  }
+  
+  @media (max-width: 389px) {
+    h2 {
+      font-size: 29px;
+    }
+
+    p {
+      font-size: 13px;
+    }
+  }
+}
+
 @media (max-width: 1439px) {
   .first__content__block {
     padding-left: 50px;

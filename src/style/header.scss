@@ -118,3 +118,13 @@ header {
     }
   }
 }
+
+@media (max-width: 389px) {
+  header {
+    .navigation {
+      a:nth-child(2) {
+        margin: 0 16px;
+      }
+    }
+  }
+}
