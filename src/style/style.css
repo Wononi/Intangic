@@ -63,8 +63,7 @@ body {
   background: -webkit-linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background: linear-gradient(180deg, rgba(47, 90, 242, 0.4) 0%, rgba(112, 97, 163, 0.9) 30%, rgba(245, 138, 37, 0.3) 100%);
   background-size: 1263px 1253px;
-  animation: 3s linear 0s normal none infinite running rot;
-  -webkit-animation: 3s linear 0s normal none infinite running rot; }
+  transition: all 0.5s; }
   @media (max-width: 1600px) {
     .sphere__background {
       left: 662px; } }
@@ -105,18 +104,6 @@ body {
     .sphere__background__two {
       top: 2122px; } }
 
-@keyframes rot {
-  0% {
-    transform: scale(0.8); }
-  50% {
-    transform: scale(1); }
-  100% {
-    transform: scale(0.8); } }
-@-webkit-keyframes rot {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
 main,
 .footer__wrapper,
 header {
@@ -127,15 +114,15 @@ header {
   opacity: 0; }
 
 .element__show {
-  animation: show-element 500ms 1;
+  animation: show-element 2s 1;
   opacity: 1; }
 
 @keyframes show-element {
   0% {
-    transform: translateY(0);
+    transform: translateY(50px);
     opacity: 0; }
-  50% {
-    transform: translateY(100%);
+  100% {
+    transform: translateY(0);
     opacity: 1; } }
 .wrapper {
   position: relative;
@@ -506,9 +493,28 @@ main.home__block {
     letter-spacing: 0.04em;
     font-size: 12px;
     line-height: 100%;
-    color: #050402; }
-    .welcome__block a span,
+    color: #050402;
+    position: relative;
+    overflow: hidden; }
     .welcome__block a svg {
+      vertical-align: middle; }
+    .welcome__block a:hover {
+      background: rgba(255, 255, 255, 0.9); }
+      .welcome__block a:hover::before {
+        bottom: 18px; }
+      .welcome__block a:hover::after {
+        bottom: 50px; }
+    .welcome__block a::before {
+      content: 'get in touch';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease; }
+    .welcome__block a::after {
+      content: 'get in touch';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle; }
 
 .first__content__block,
@@ -527,7 +533,8 @@ main.home__block {
   overflow: hidden; }
   .first__content__block-wrapper {
     position: relative;
-    z-index: 5; }
+    z-index: 5;
+    border-radius: 16px; }
   .first__content__block h2 {
     font-weight: 700;
     font-size: 48px;
@@ -582,9 +589,28 @@ main.home__block {
     padding: 12px 14px;
     display: block;
     margin: 0 auto;
-    width: fit-content; }
-    .first__content__block a span,
+    width: fit-content;
+    overflow: hidden;
+    position: relative; }
     .first__content__block a svg {
+      vertical-align: middle; }
+    .first__content__block a:hover {
+      background: rgba(255, 255, 255, 0.1); }
+      .first__content__block a:hover::before {
+        bottom: 18px; }
+      .first__content__block a:hover::after {
+        bottom: 50px; }
+    .first__content__block a::before {
+      content: 'Learn more about our coverage';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease; }
+    .first__content__block a::after {
+      content: 'Learn more about our coverage';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle; }
   .first__content__block-img {
     position: absolute;
@@ -646,7 +672,8 @@ main.home__block {
     z-index: 5;
     display: flex;
     flex-direction: column;
-    align-items: center; }
+    align-items: center;
+    border-radius: 16px; }
   .second__content__block h2 {
     padding-top: 100px;
     font-weight: 700;

@@ -35,9 +35,38 @@ main.home__block {
     font-size: 12px;
     line-height: 100%;
     color: #050402;
+    position: relative;
+    overflow: hidden;
 
-    span,
     svg {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.9);
+
+      &::before {
+        bottom: 18px;
+      }
+
+      &::after {
+        bottom: 50px;
+      }
+    }
+
+    &::before {
+      content: 'get in touch';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease;
+    }
+
+    &::after {
+      content: 'get in touch';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle;
     }
   }
@@ -62,6 +91,7 @@ main.home__block {
   &-wrapper {
     position: relative;
     z-index: 5;
+    border-radius: 16px;
   }
 
   h2 {
@@ -135,9 +165,38 @@ main.home__block {
     display: block;
     margin: 0 auto;
     width: fit-content;
+    overflow: hidden;
+    position: relative;
 
-    span,
     svg {
+      vertical-align: middle;
+    }
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.1);
+
+      &::before {
+        bottom: 18px;
+      }
+
+      &::after {
+        bottom: 50px;
+      }
+    }
+
+    &::before {
+      content: 'Learn more about our coverage';
+      position: absolute;
+      bottom: -50px;
+      left: 46px;
+      transition: all 500ms ease;
+    }
+
+    &::after {
+      content: 'Learn more about our coverage';
+      position: relative;
+      bottom: 0;
+      transition: all 500ms ease;
       vertical-align: middle;
     }
   }
@@ -216,6 +275,7 @@ main.home__block {
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-radius: 16px;
   }
 
   h2 {
