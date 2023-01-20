@@ -552,7 +552,8 @@ main.home__block {
     position: relative;
     z-index: 5;
     border-radius: 16px;
-    padding: 0 146px; }
+    padding: 0 146px;
+    overflow: hidden; }
   .first__content__block h2 {
     font-weight: 700;
     font-size: 48px;
