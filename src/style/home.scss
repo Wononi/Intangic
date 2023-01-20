@@ -385,7 +385,7 @@ main.home__block {
   }
   
   @media (max-width: 1023px) {
-    margin-top: 45px;
+    margin: 45px 0;
 
     h2 {
       font-size: 32px;
@@ -409,7 +409,7 @@ main.home__block {
 }
 
 @media (max-width: 1439px) {
-  .first__content__block {
+  .first__content__block-wrapper {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -535,8 +535,10 @@ main.home__block {
   }
 
   .first__content__block {
-    padding-left: 25px;
-    padding-right: 25px;
+    &-wrapper {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
 
     h2 {
       width: 100%;

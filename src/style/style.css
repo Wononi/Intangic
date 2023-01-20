@@ -780,7 +780,7 @@ main.home__block {
     margin: 14px 0 44px 0; }
   @media (max-width: 1023px) {
     .trusted__by__industry {
-      margin-top: 45px; }
+      margin: 45px 0; }
       .trusted__by__industry h2 {
         font-size: 32px; }
       .trusted__by__industry p {
@@ -793,7 +793,7 @@ main.home__block {
       font-size: 13px; } }
 
 @media (max-width: 1439px) {
-  .first__content__block {
+  .first__content__block-wrapper {
     padding-left: 50px;
     padding-right: 50px; } }
 @media (max-width: 1238px) {
@@ -863,14 +863,14 @@ main.home__block {
       width: 80%;
       margin-bottom: 38px; }
 
-  .first__content__block {
+  .first__content__block-wrapper {
     padding-left: 25px;
     padding-right: 25px; }
-    .first__content__block h2 {
-      width: 100%;
-      padding-top: 50px; }
-    .first__content__block p {
-      width: 100%; }
+  .first__content__block h2 {
+    width: 100%;
+    padding-top: 50px; }
+  .first__content__block p {
+    width: 100%; }
 
   .second__content__block {
     padding-bottom: 62px; }
