@@ -117,11 +117,34 @@ p.rotation.z = 0.2;
 scene.add(p);
 
 let clock = new THREE.Clock();
+let test = 1
 
-renderer.setAnimationLoop(() => {
-    controls.update();
-    let t = clock.getElapsedTime() * 0.5;
-    gu.time.value = t * Math.PI;
-    p.rotation.y = t * 0.05;
-    renderer.render(scene, camera);
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            renderer.setAnimationLoop(() => {
+                controls.update();
+                let t = clock.getElapsedTime() * 0.5;
+                gu.time.value = t * Math.PI;
+                p.rotation.y = t * 0.05;
+                renderer.render(scene, camera);
+            });
+        }
+        else {
+            renderer.setAnimationLoop(() => {
+            });
+        }
+    });
 });
+
+observer.observe(document.querySelector('.welcome__block-sphere'))
+
+
+// renderer.setAnimationLoop(() => {
+//     controls.update();
+//     let t = clock.getElapsedTime() * 0.5;
+//     gu.time.value = t * Math.PI;
+//     p.rotation.y = t * 0.05;
+//     renderer.render(scene, camera);
+// });
+

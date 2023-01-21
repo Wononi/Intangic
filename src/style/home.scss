@@ -1,5 +1,6 @@
 main.home__block {
   margin-top: 127px;
+  //transform: translateY(127px);
 }
 
 .welcome__block {
@@ -132,6 +133,7 @@ main.home__block {
         text-transform: uppercase;
         color: #FFFFFF;
         text-align: center;
+        margin-bottom: 8px;
 
         svg,
         span {
@@ -446,6 +448,7 @@ main.home__block {
 @media (max-width: 1023px) {
   main.home__block {
     margin-top: 60px;
+    //transform: translateY(60px);
   }
 
   .welcome__block {

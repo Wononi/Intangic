@@ -17,9 +17,18 @@ footer {
     line-height: 140%;
     text-align: center;
     color: #83848A;
+    max-width: 60%;
+    margin-bottom: 40px;
+    
+    @media (max-width: 768px) {
+      max-width: none;
+    }
+  }
+
+  .line {
+    background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 40px;
+    height: 1px;
   }
 
   .footer__links {

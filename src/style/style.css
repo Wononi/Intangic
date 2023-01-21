@@ -42,8 +42,13 @@ body {
 .download__form__block-sphere__two,
 .download__form__block-sphere__three,
 .first__content__block-sphere__bg-one,
+.first__content__block-sphere__bg-two,
 .second__content__block-sphere__bg-one,
-.second__content__block-sphere__bg-two {
+.second__content__block-sphere__bg-two,
+.first__content__block,
+.first__content__block-wrapper,
+.second__content__block,
+.second__content__block-wrapper {
   transform: translate3d(0, 0, 0); }
 
 .sphere__background {
@@ -582,7 +587,8 @@ main.home__block {
       letter-spacing: 0.04em;
       text-transform: uppercase;
       color: #FFFFFF;
-      text-align: center; }
+      text-align: center;
+      margin-bottom: 8px; }
       .first__content__block-advantages__item h3 svg,
       .first__content__block-advantages__item h3 span {
         vertical-align: middle; }
@@ -1471,9 +1477,15 @@ footer {
     line-height: 140%;
     text-align: center;
     color: #83848A;
+    max-width: 60%;
+    margin-bottom: 40px; }
+    @media (max-width: 768px) {
+      .footer__wrapper p {
+        max-width: none; } }
+  .footer__wrapper .line {
+    background: rgba(0, 0, 0, 0.1);
     width: 100%;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding-bottom: 40px; }
+    height: 1px; }
   .footer__wrapper .footer__links {
     margin-top: 16px; }
     .footer__wrapper .footer__links a {
