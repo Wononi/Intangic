@@ -1272,9 +1272,10 @@ main.home__block {
       line-height: 140%;
       display: flex;
       align-items: flex-end;
+      justify-content: center;
       text-align: center;
       color: #83848A;
-      margin-bottom: 70px; }
+      margin-bottom: 35px; }
     .company__block .company__employees-founder figcaption {
       font-family: 'JetBrains Mono';
       font-style: normal;
