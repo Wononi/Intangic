@@ -566,7 +566,6 @@ main.home__block {
     color: #FFFFFF;
     text-align: center;
     padding-top: 100px;
-    width: 70%;
     margin: 0 auto; }
   .first__content__block-advantages {
     margin-top: 73px;
@@ -943,7 +942,7 @@ main.home__block {
       letter-spacing: -0.02em;
       color: #FFFFFF;
       opacity: 0.6;
-      width: 57%;
+      width: 59%;
       margin: 32px auto 57px auto; }
     .coverage__block .cyber__risk__info ul {
       display: grid;
