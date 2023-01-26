@@ -91,7 +91,9 @@
     .download__form__block section .left__content p span {
       white-space: pre; }
       .download__form__block section .left__content p span:before {
-        content: '\A'; } }
+        content: '\A'; }
+    .download__form__block section .left__content a {
+      margin: 40px auto 0 auto; } }
 @media (max-width: 767px) {
   .download__form__block section {
     margin-top: 54px;

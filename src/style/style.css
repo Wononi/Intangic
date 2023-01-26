@@ -380,21 +380,40 @@ header {
   z-index: -1; }
 
 header {
-  padding: 16px 146px 0 146px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center; }
-  header .navigation a {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 100%;
-    letter-spacing: 0.04em; }
-    header .navigation a:nth-child(2) {
-      margin: 0 32px; }
-    header .navigation a.active {
-      opacity: 0.3; }
+  padding: 16px 153px 0 153px;
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+  header .navigation {
+    justify-self: center;
+    width: max-content; }
+    header .navigation a {
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 100%;
+      letter-spacing: 0.04em; }
+      header .navigation a:nth-child(2) {
+        margin: 0 32px; }
+      header .navigation a.active {
+        opacity: 0.3; }
+  header .scroll__nav {
+    position: fixed;
+    top: -100px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 100;
+    padding: 19px 24px;
+    background: rgba(49, 43, 50, 0.7);
+    backdrop-filter: blur(15px);
+    border-radius: 43px;
+    transition: all 1s; }
+    @media (max-width: 767px) {
+      header .scroll__nav {
+        display: none; } }
+    header .scroll__nav-show {
+      top: 20px; }
   header .application__btn {
     color: #ffffff;
     text-transform: uppercase;
@@ -408,7 +427,9 @@ header {
     text-decoration: none;
     transition: background 500ms ease;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    width: fit-content;
+    justify-self: end; }
     header .application__btn:hover {
       background: rgba(225, 225, 225, 0.4); }
       header .application__btn:hover::before {
@@ -468,7 +489,8 @@ header {
     padding: 16px 85px 0 85px; } }
 @media (max-width: 767px) {
   header {
-    padding: 16px 16px 0 16px; }
+    padding: 16px 16px 0 16px;
+    grid-template-columns: repeat(2, 1fr); }
     header .navigation {
       display: block;
       position: fixed;
@@ -482,7 +504,9 @@ header {
       border-radius: 43px;
       padding: 19px 32px; }
       header .navigation a {
-        color: #FFFFFF !important; } }
+        color: #FFFFFF !important; }
+    header .scroll__nav {
+      display: none; } }
 @media (max-width: 389px) {
   header .navigation a:nth-child(2) {
     margin: 0 16px; } }
@@ -504,7 +528,7 @@ main.home__block {
     line-height: 140%;
     text-align: center;
     letter-spacing: -0.02em;
-    color: #9D9C9D;
+    color: #FFFFFF;
     width: 43%; }
   .welcome__block a {
     width: fit-content;
@@ -596,9 +620,7 @@ main.home__block {
       font-size: 16px;
       line-height: 140%;
       text-align: center;
-      color: #FFFFFF;
-      opacity: 0.5;
-      text-align: center; }
+      color: #EBE3EB; }
   .first__content__block a {
     font-weight: 500;
     font-size: 12px;
@@ -979,8 +1001,7 @@ main.home__block {
         font-size: 16px;
         line-height: 140%;
         text-align: center;
-        color: #FFFFFF;
-        opacity: 0.5;
+        color: #B6AFEB;
         white-space: pre; }
         .coverage__block .cyber__risk__info ul li p.text span::before {
           content: '\A'; }
@@ -1253,7 +1274,7 @@ main.home__block {
           font-weight: 400;
           font-size: 16px;
           line-height: 140%;
-          color: #83848A; }
+          color: #B5B6BC; }
           .company__block .data__science-wrapper__item-text:nth-child(3) {
             margin-bottom: 25px; }
         .company__block .data__science-wrapper__item:nth-child(3) {
@@ -1273,7 +1294,7 @@ main.home__block {
       align-items: flex-end;
       justify-content: center;
       text-align: center;
-      color: #83848A;
+      color: #B5B6BC;
       margin-bottom: 35px; }
     .company__block .company__employees-founder figcaption {
       font-family: 'JetBrains Mono';
@@ -1321,7 +1342,7 @@ main.home__block {
           display: flex;
           column-gap: 21px;
           align-items: center;
-          margin-bottom: 101px; }
+          margin-bottom: 124px; }
           .company__block .company__employees-executive__team-wrapper__item-info__name h4 {
             font-style: normal;
             font-weight: 500;
