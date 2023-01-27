@@ -1482,50 +1482,64 @@ main.home__block {
     white-space: pre; }
     .company__block .data__science h1 span::before {
       content: "\a" !important; } }
-.privacy__block {
+.privacy__block,
+.terms__block {
   margin: 108px 0 0 153px;
   max-width: 991px; }
-  .privacy__block h2 {
+  .privacy__block h2,
+  .terms__block h2 {
     margin-bottom: 40px;
     font-weight: 700;
     font-size: 40px;
     line-height: 110%;
     letter-spacing: -0.02em;
     color: #000000; }
-  .privacy__block h3, .privacy__block p, .privacy__block li {
+  .privacy__block h3, .privacy__block p, .privacy__block li,
+  .terms__block h3,
+  .terms__block p,
+  .terms__block li {
     font-family: "Commissioner", sans-serif;
     font-size: 18px;
     line-height: 27px;
     letter-spacing: -0.01em;
     text-align: left; }
-  .privacy__block h3 {
+  .privacy__block h3,
+  .terms__block h3 {
     font-weight: 600;
     margin-top: 83px; }
-    .privacy__block h3:nth-child(2) {
+    .privacy__block h3:nth-child(2),
+    .terms__block h3:nth-child(2) {
       margin-top: 0; }
-  .privacy__block p {
+  .privacy__block p,
+  .terms__block p {
     margin-top: 27px;
     color: #646464;
     font-weight: 400; }
-  .privacy__block ul {
+  .privacy__block ul,
+  .terms__block ul {
     margin-top: 27px; }
-  .privacy__block li {
+  .privacy__block li,
+  .terms__block li {
     list-style: disc;
     margin-left: 26px;
     color: #646464; }
 
 @media (max-width: 1439px) {
-  .privacy__block {
+  .privacy__block,
+  .terms__block {
     margin: 65px 0 0 134px;
     max-width: 820px; } }
 @media (max-width: 1023px) {
-  .privacy__block {
+  .privacy__block,
+  .terms__block {
     margin: 65px 0 0 85px;
     max-width: 640px; }
-    .privacy__block h3 {
+    .privacy__block h3,
+    .terms__block h3 {
       margin-top: 42px; } }
 @media (max-width: 767px) {
-  .privacy__block {
+  .privacy__block,
+  .terms__block {
     margin: 30px 0 0 16px;
     max-width: 340px; } }
 footer {
