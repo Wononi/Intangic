@@ -1576,7 +1576,7 @@ footer {
   .footer__wrapper {
     padding: 30px 16px 87px 16px; }
     .footer__wrapper .footer__links a:nth-child(2) {
-      margin: 0 30px; }
+      margin-left: 30px; }
     .footer__wrapper .footer__nav {
       display: block;
       margin-top: 54px;
