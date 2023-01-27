@@ -459,7 +459,8 @@ header {
     line-height: 100%;
     color: #050402;
     overflow: hidden;
-    position: relative; }
+    position: relative;
+    justify-self: end; }
     header .download__page__link svg {
       vertical-align: middle; }
     header .download__page__link:hover {
