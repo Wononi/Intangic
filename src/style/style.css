@@ -1563,7 +1563,7 @@ footer {
       line-height: 140%;
       color: #83848A; }
       .footer__wrapper .footer__links a:nth-child(2) {
-        margin: 0 40px; }
+        margin-left: 40px; }
   .footer__wrapper .footer__nav {
     display: none; }
 
