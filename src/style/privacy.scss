@@ -10,7 +10,7 @@
     letter-spacing: -0.02em;
     color: #000000;
   }
-  h3,p,li {
+  h3,p,li,a {
     font-family: "Commissioner", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -29,6 +29,10 @@
     margin-top: 27px;
     color: #646464;
     font-weight: 400;
+  }
+
+  a:visited {
+    color: #0d0def;
   }
 
   ul {

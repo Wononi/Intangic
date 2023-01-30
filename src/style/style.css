@@ -1494,10 +1494,11 @@ main.home__block {
     line-height: 110%;
     letter-spacing: -0.02em;
     color: #000000; }
-  .privacy__block h3, .privacy__block p, .privacy__block li,
+  .privacy__block h3, .privacy__block p, .privacy__block li, .privacy__block a,
   .terms__block h3,
   .terms__block p,
-  .terms__block li {
+  .terms__block li,
+  .terms__block a {
     font-family: "Commissioner", sans-serif;
     font-size: 18px;
     line-height: 27px;
@@ -1515,6 +1516,9 @@ main.home__block {
     margin-top: 27px;
     color: #646464;
     font-weight: 400; }
+  .privacy__block a:visited,
+  .terms__block a:visited {
+    color: #0d0def; }
   .privacy__block ul,
   .terms__block ul {
     margin-top: 27px; }
