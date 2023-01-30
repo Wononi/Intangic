@@ -1121,13 +1121,13 @@ main.home__block {
         .coverage__block .customer__dashboard a:hover::after {
           bottom: 50px; }
       .coverage__block .customer__dashboard a::before {
-        content: 'get in touch';
+        content: 'Application Form';
         position: absolute;
         bottom: -50px;
         left: 46px;
         transition: all 500ms ease; }
       .coverage__block .customer__dashboard a::after {
-        content: 'get in touch';
+        content: 'Application Form';
         position: relative;
         bottom: 0;
         transition: all 500ms ease;
