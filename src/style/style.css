@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Commissioner:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap");
 @import url(download.css);
 * {
@@ -553,13 +554,13 @@ main.home__block {
       .welcome__block a:hover::after {
         bottom: 50px; }
     .welcome__block a::before {
-      content: 'get in touch';
+      content: 'apply for coverage';
       position: absolute;
       bottom: -50px;
       left: 46px;
       transition: all 500ms ease; }
     .welcome__block a::after {
-      content: 'get in touch';
+      content: 'apply for coverage';
       position: relative;
       bottom: 0;
       transition: all 500ms ease;
@@ -646,13 +647,13 @@ main.home__block {
       .first__content__block a:hover::after {
         bottom: 50px; }
     .first__content__block a::before {
-      content: 'Learn more about our coverage';
+      content: 'Learn more about our cyfi™ product';
       position: absolute;
       bottom: -50px;
       left: 46px;
       transition: all 500ms ease; }
     .first__content__block a::after {
-      content: 'Learn more about our coverage';
+      content: 'Learn more about our cyfi™ product';
       position: relative;
       bottom: 0;
       transition: all 500ms ease;
@@ -1121,13 +1122,13 @@ main.home__block {
         .coverage__block .customer__dashboard a:hover::after {
           bottom: 50px; }
       .coverage__block .customer__dashboard a::before {
-        content: 'Application Form';
+        content: 'apply for coverage';
         position: absolute;
         bottom: -50px;
         left: 46px;
         transition: all 500ms ease; }
       .coverage__block .customer__dashboard a::after {
-        content: 'Application Form';
+        content: 'apply for coverage';
         position: relative;
         bottom: 0;
         transition: all 500ms ease;

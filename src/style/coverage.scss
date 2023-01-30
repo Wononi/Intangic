@@ -236,7 +236,7 @@
       }
 
       &::before {
-        content: 'Application Form';
+        content: 'apply for coverage';
         position: absolute;
         bottom: -50px;
         left: 46px;
@@ -244,7 +244,7 @@
       }
 
       &::after {
-        content: 'Application Form';
+        content: 'apply for coverage';
         position: relative;
         bottom: 0;
         transition: all 500ms ease;
