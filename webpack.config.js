@@ -39,7 +39,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: './css/style.css'
+            filename: './css/style.[contenthash].css'
         }),
         new webpack.SourceMapDevToolPlugin({
             filename: '[file].map',
