@@ -32,14 +32,14 @@ module.exports = {
         animation: './js/animation-galaxy-sphere.js',
     },
     output: {
-        path: path.resolve(__dirname, './assets/js'),
-        filename: '[name].bundle.js'
+        path: path.resolve(__dirname, './assets/'),
+        filename: './js/[name].bundle.js'
     },
     optimization: optimization(),
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: '../css/style.css'
+            filename: './css/style.[contenthash].css'
         }),
         new webpack.SourceMapDevToolPlugin({
             filename: '[file].map',

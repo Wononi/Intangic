@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d05b83c3-2bdf-4b50-98fb-9f1ec64a6dad" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style.3399e6c3d760dd5f0fd8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/css/style.3399e6c3d760dd5f0fd8.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/company.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/coverage.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/download.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/footer.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/header.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/home.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/sphere.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/1af9bcb8f82b1539b25eb90bf6a8aa2794efa370/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/b2d17967fa45a01cd3e7c94998499c64a8c1b0b4/coverage.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/b2d17967fa45a01cd3e7c94998499c64a8c1b0b4/footer.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/b2d17967fa45a01cd3e7c94998499c64a8c1b0b4/header.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/b2d17967fa45a01cd3e7c94998499c64a8c1b0b4/home.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/.sass-cache/b2d17967fa45a01cd3e7c94998499c64a8c1b0b4/style.scssc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/js/Modernizr/modernizr-2.0.6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/style/.sass-cache/3cc91d6d6fbdc8890e0011c9314f0c68d8d49987/header.sassc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/style/oldstyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/style/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backup/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Intangic mga.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Intangic new.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Generated_files.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.html" beforeDir="false" afterPath="$PROJECT_DIR$/application_form/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/style.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/animation.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/animation.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/index.bundle.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/index.bundle.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/company.html" beforeDir="false" afterPath="$PROJECT_DIR$/company/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cyfi_product.html" beforeDir="false" afterPath="$PROJECT_DIR$/cyfi_product/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/download_file/IntangicMGA Application Form.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/download_file/IntangicMGA Application Form.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/privacy_policy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/animate-block.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/animate-block.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/animation-galaxy-sphere.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/animation-galaxy-sphere.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/.sass-cache/d2a1393bccce0bd0a560a68bc7e618812d3abd3c/company.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/.sass-cache/d2a1393bccce0bd0a560a68bc7e618812d3abd3c/company.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/.sass-cache/d2a1393bccce0bd0a560a68bc7e618812d3abd3c/footer.scssc" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/.sass-cache/d2a1393bccce0bd0a560a68bc7e618812d3abd3c/footer.scssc" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/company.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/company.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/company.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/company.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/company.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/company.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/coverage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/coverage.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/coverage.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/coverage.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/coverage.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/coverage.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/download.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/download.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/download.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/download.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/download.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/download.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/footer.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/footer.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/footer.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/footer.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/header.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/header.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/home.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/home.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/home.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/home.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/privacy.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/privacy.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/privacy.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/privacy.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/privacy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/privacy.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sphere.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sphere.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sphere.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sphere.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/sphere.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/sphere.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/style/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terms.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Sass File" />
+        <option value="package.json" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+        <option value="SCSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2K5CG58jIGzCoKPlr5ChQc8KgLo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "F:/develop/Intangic",
+    "list.type.of.created.stylesheet": "SCSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\develop\Intangic" />
+      <recent name="F:\develop\Intangic\assets\js" />
+      <recent name="F:\develop\Intangic mga\style" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\develop\Intangic\src" />
+      <recent name="F:\develop\Intangic\application_form" />
+      <recent name="F:\develop\Intangic\company" />
+      <recent name="F:\develop\Intangic\cyfi_product" />
+      <recent name="F:\develop\Intangic\privacy_policy" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d05b83c3-2bdf-4b50-98fb-9f1ec64a6dad" name="Changes" comment="" />
+      <created>1673254958718</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1673254958718</updated>
+      <workItem from="1673254960419" duration="16833000" />
+      <workItem from="1673352921070" duration="7644000" />
+      <workItem from="1673375019431" duration="403000" />
+      <workItem from="1673376014361" duration="1832000" />
+      <workItem from="1673426868835" duration="10297000" />
+      <workItem from="1673441253673" duration="43000" />
+      <workItem from="1673441328066" duration="18937000" />
+      <workItem from="1673465849958" duration="22756000" />
+      <workItem from="1673522864872" duration="1777000" />
+      <workItem from="1673529653144" duration="3945000" />
+      <workItem from="1673545640394" duration="3469000" />
+      <workItem from="1673551952295" duration="847000" />
+      <workItem from="1673552816305" duration="219000" />
+      <workItem from="1673553240509" duration="767000" />
+      <workItem from="1673598330314" duration="23077000" />
+      <workItem from="1673699014698" duration="1603000" />
+      <workItem from="1673700651725" duration="1857000" />
+      <workItem from="1673862096932" duration="18708000" />
+      <workItem from="1673894494401" duration="3063000" />
+      <workItem from="1673944848003" duration="14405000" />
+      <workItem from="1674036403054" duration="6574000" />
+      <workItem from="1674138481945" duration="9758000" />
+      <workItem from="1674207280377" duration="21502000" />
+      <workItem from="1674296597395" duration="4776000" />
+      <workItem from="1674470947889" duration="3724000" />
+      <workItem from="1674490951779" duration="787000" />
+      <workItem from="1674649723309" duration="1403000" />
+      <workItem from="1674739887775" duration="8474000" />
+      <workItem from="1674815880658" duration="9453000" />
+      <workItem from="1675080001239" duration="716000" />
+      <workItem from="1675090566427" duration="775000" />
+      <workItem from="1675094640154" duration="3354000" />
+      <workItem from="1675155116725" duration="2345000" />
+      <workItem from="1675165477524" duration="1140000" />
+      <workItem from="1675243782152" duration="130000" />
+      <workItem from="1675762307783" duration="453000" />
+      <workItem from="1675789283406" duration="4850000" />
+      <workItem from="1675842233884" duration="2399000" />
+      <workItem from="1675852302491" duration="243000" />
+      <workItem from="1675856719990" duration="365000" />
+      <workItem from="1675870410990" duration="2052000" />
+      <workItem from="1675934301555" duration="17000" />
+      <workItem from="1676015098468" duration="5063000" />
+      <workItem from="1676039380620" duration="3782000" />
+      <workItem from="1676276084914" duration="42000" />
+      <workItem from="1676396345894" duration="131000" />
+      <workItem from="1676448708916" duration="1998000" />
+      <workItem from="1676577054333" duration="159000" />
+      <workItem from="1676623780927" duration="3135000" />
+      <workItem from="1677506095777" duration="307000" />
+      <workItem from="1677506712855" duration="1612000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
