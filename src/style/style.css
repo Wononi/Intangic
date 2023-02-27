@@ -1309,6 +1309,10 @@ main.home__block {
       color: #FFFFFF;
       width: fit-content;
       margin: 0 auto; }
+      @media (max-width: 767px) {
+        .company__block .company__employees-founder figcaption {
+          font-size: 16px;
+          line-height: 140%; } }
     .company__block .company__employees-founder p.post {
       font-style: normal;
       font-weight: 400;
@@ -1317,7 +1321,12 @@ main.home__block {
       color: rgba(254, 254, 254, 0.6);
       opacity: 0.3;
       width: fit-content;
-      margin: 0 auto; }
+      margin: 0 auto;
+      text-align: center; }
+      @media (max-width: 767px) {
+        .company__block .company__employees-founder p.post {
+          font-size: 20px;
+          line-height: 140%; } }
   .company__block .company__employees-executive__team {
     margin-bottom: 86px; }
     .company__block .company__employees-executive__team h3 {
@@ -1448,7 +1457,8 @@ main.home__block {
     padding: 72px 10px; }
     .company__block .company__employees-founder blockquote {
       padding: 0 20px;
-      font-size: 18px; }
+      font-size: 24px;
+      line-height: 120%; }
   .company__block .company__employees-executive__team h3 {
     font-size: 26px;
     margin-bottom: 24px; }
@@ -1581,8 +1591,8 @@ footer {
       font-size: 14px;
       line-height: 140%;
       color: #83848A; }
-      .footer__wrapper .footer__links a:nth-child(2) {
-        margin-left: 40px; }
+    .footer__wrapper .footer__links .ml {
+      margin-left: 40px; }
   .footer__wrapper .footer__nav {
     display: none; }
 
@@ -1594,7 +1604,7 @@ footer {
 @media (max-width: 767px) {
   .footer__wrapper {
     padding: 30px 16px 87px 16px; }
-    .footer__wrapper .footer__links a:nth-child(2) {
+    .footer__wrapper .footer__links a.ml {
       margin-left: 30px; }
     .footer__wrapper .footer__nav {
       display: block;
@@ -1612,8 +1622,6 @@ footer {
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: #FFFFFF; }
-        .footer__wrapper .footer__nav a:nth-child(2) {
-          margin: 0 35px; }
         .footer__wrapper .footer__nav a.active {
           opacity: 0.3; } }
 
