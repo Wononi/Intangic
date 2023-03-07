@@ -41,15 +41,12 @@ var tween3 = TweenMax.from("#animateBGTwo", 0.5, {opacity: 0});
 // build scene and set duration to window height
 var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween1)
-  .addIndicators()
   .addTo(controller);
 
 var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween2)
-  .addIndicators()
   .addTo(controller);
 var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween3)
-  .addIndicators()
   .addTo(controller);
 
