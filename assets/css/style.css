@@ -1024,7 +1024,7 @@ main.home__block {
   top: -199px;
   z-index: 4;
   background: #B2A7D1;
-  filter: blur(200px);
+  filter: blur(200px) contrast(80%);
   border-radius: 174px;
 }
 .second__content__block-sphere__bg-two {
@@ -1036,7 +1036,7 @@ main.home__block {
   background: linear-gradient(180deg, #2F5AF2 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
   background-size: 515px 1253px;
   mix-blend-mode: normal;
-  filter: blur(130px);
+  filter: blur(130px) contrast(80%);
   transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0);
 }
 
