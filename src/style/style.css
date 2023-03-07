@@ -52,6 +52,10 @@ body {
 .second__content__block-wrapper {
   transform: translate3d(0, 0, 0); }
 
+.border-l-r {
+  border-right: 1px solid rgba(225, 225, 225, 0.1);
+  border-left: 1px solid rgba(225, 225, 225, 0.1); }
+
 .sphere__background {
   position: absolute;
   width: 1263px;
@@ -747,6 +751,8 @@ main.home__block {
   border-radius: 16px;
   position: relative;
   overflow: hidden; }
+  .second__content__block-wrapper, .second__content__block-sphere__bg-one, .second__content__block-sphere__bg-two {
+    transition: all 1s ease; }
   .second__content__block-wrapper {
     position: relative;
     z-index: 5;
@@ -1033,9 +1039,6 @@ main.home__block {
         @media (max-width: 767px) {
           .coverage__block .cyber__risk__info ul li {
             padding: 40px 0; } }
-        .coverage__block .cyber__risk__info ul li:nth-child(2) {
-          border-right: 1px solid rgba(225, 225, 225, 0.1);
-          border-left: 1px solid rgba(225, 225, 225, 0.1); }
         .coverage__block .cyber__risk__info ul li p span {
           font-style: normal;
           font-weight: 700;
