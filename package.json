@@ -39,6 +39,9 @@
   "dependencies": {
     "clean-webpack-plugin": "^4.0.0",
     "cross-env": "^7.0.3",
+    "gsap": "^3.11.4",
+    "imports-loader": "^4.0.1",
+    "scrollmagic": "^2.0.8",
     "three": "^0.148.0"
   }
 }

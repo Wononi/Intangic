@@ -921,13 +921,17 @@ main.home__block {
 
 .second__content__block {
   margin-top: 32px;
-  background: #00005F;
-  padding-bottom: 92px;
+  background: #140D2B;
+  padding: 166px 0 200px 0;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
   overflow: hidden;
+}
+.second__content__block-wrapper, .second__content__block-sphere__bg-one, .second__content__block-sphere__bg-two {
+  opacity: 0;
+  transition: all 2s ease-in-out;
 }
 .second__content__block-wrapper {
   position: relative;
@@ -937,8 +941,10 @@ main.home__block {
   align-items: center;
   border-radius: 16px;
 }
+.second__content__block .visible {
+  opacity: 1;
+}
 .second__content__block h2 {
-  padding-top: 100px;
   font-weight: 700;
   font-size: 48px;
   line-height: 120%;
@@ -959,62 +965,75 @@ main.home__block {
   letter-spacing: -0.02em;
   color: #FFFFFF;
   opacity: 0.5;
-  margin-top: 56px;
-  margin-bottom: 158px;
+  margin: 56px 0 62px 0;
   max-width: 601px;
+}
+.second__content__block a {
+  padding: 12px 14px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+  overflow: hidden;
+  position: relative;
+}
+.second__content__block a svg {
+  vertical-align: middle;
+}
+.second__content__block a:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.second__content__block a:hover::before {
+  bottom: 18px;
+}
+.second__content__block a:hover::after {
+  bottom: 50px;
+}
+.second__content__block a::before {
+  content: "apply for coverage";
+  position: absolute;
+  bottom: -50px;
+  left: 46px;
+  transition: all 500ms ease;
+}
+.second__content__block a::after {
+  content: "apply for coverage";
+  position: relative;
+  bottom: 0;
+  transition: all 500ms ease;
+  vertical-align: middle;
 }
 .second__content__block-sphere__bg-one {
   position: absolute;
-  width: 861px;
-  height: 854px;
-  left: -131px;
-  top: -360px;
-  background: linear-gradient(180deg, #FF7BCA 0%, rgba(255, 197, 111, 0.46) 100%);
-  filter: blur(100px);
-  border-radius: 100%;
+  width: 860px;
+  height: 471px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: -199px;
   z-index: 4;
-}
-@media (max-width: 1600px) {
-  .second__content__block-sphere__bg-one {
-    left: -244px;
-  }
-}
-@media (max-width: 1100px) {
-  .second__content__block-sphere__bg-one {
-    left: -424px;
-  }
-}
-@media (max-width: 650px) {
-  .second__content__block-sphere__bg-one {
-    left: -709px;
-  }
+  background: #B2A7D1;
+  filter: blur(200px);
+  border-radius: 174px;
 }
 .second__content__block-sphere__bg-two {
   position: absolute;
-  width: 1263px;
+  width: 515px;
   height: 1253px;
-  left: 647px;
-  top: -559px;
-  background: linear-gradient(180deg, #F22FB0 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+  left: 50%;
+  top: -1059px;
+  background: linear-gradient(180deg, #2F5AF2 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+  background-size: 515px 1253px;
   mix-blend-mode: normal;
   filter: blur(130px);
-  border-radius: 100%;
-  z-index: 3;
-}
-@media (max-width: 1600px) {
-  .second__content__block-sphere__bg-two {
-    left: 448px;
-  }
-}
-@media (max-width: 1100px) {
-  .second__content__block-sphere__bg-two {
-    left: 310px;
-  }
-}
-@media (max-width: 650px) {
-  .second__content__block-sphere__bg-two {
-    left: -17px;
-  }
+  transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0);
 }
 
 .trusted__by__industry {
@@ -1166,7 +1185,7 @@ main.home__block {
     font-size: 11px;
   }
   .second__content__block {
-    padding-bottom: 62px;
+    padding: 50px 0 100px 0;
   }
   .second__content__block h2 {
     padding-left: 20px;
@@ -1180,11 +1199,6 @@ main.home__block {
     margin-bottom: 40px;
     padding: 0 20px;
     width: 80%;
-  }
-  .second__content__block svg {
-    width: 100%;
-    height: auto;
-    padding: 0 14px;
   }
 }
 @media (max-width: 389px) {
