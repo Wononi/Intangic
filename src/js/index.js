@@ -1,6 +1,9 @@
+import { TimelineMax, TweenMax, Linear } from 'gsap';
+import ScrollMagic from 'scrollmagic';
+import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
+import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap'
 import './animate-block'
 import '../style/style.scss'
-import ScrollMagic from 'scrollmagic';
 
 // window.addEventListener('scroll', () => {
 //     document.querySelector('.sphere__background').style.transform = `scale(1.${pageYOffset / 100})`
@@ -30,26 +33,20 @@ setInterval(() => {
 // анимация второго блока на главной странице
 var controller = new ScrollMagic.Controller();
 
-// build scene
-new ScrollMagic.Scene({
-    triggerElement: "#trigger",
-})
-  .setClassToggle("#animate", "visible") // add class to reveal
-  .addIndicators() // add indicators (requires plugin)
+// build tween
+var tween1 = TweenMax.from("#animate", 1, {opacity: 0});
+var tween2 = TweenMax.from("#animateBGOne", 1, {opacity: 0});
+var tween3 = TweenMax.from("#animateBGTwo", 1, {opacity: 0});
+
+// build scene and set duration to window height
+var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "40%"})
+  .setTween(tween1)
   .addTo(controller);
 
-setTimeout(() => {
-    new ScrollMagic.Scene({
-        triggerElement: "#trigger",
-    })
-      .setClassToggle("#animateBGOne", "visible") // add class to reveal
-      .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
+var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "40%"})
+  .setTween(tween2)
+  .addTo(controller);
+var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "40%"})
+  .setTween(tween3)
+  .addTo(controller);
 
-    new ScrollMagic.Scene({
-        triggerElement: "#trigger",
-    })
-      .setClassToggle("#animateBGTwo", "visible") // add class to reveal
-      .addIndicators() // add indicators (requires plugin)
-      .addTo(controller);
-}, 4000)
