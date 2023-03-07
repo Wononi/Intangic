@@ -34,19 +34,22 @@ setInterval(() => {
 var controller = new ScrollMagic.Controller();
 
 // build tween
-var tween1 = TweenMax.from("#animate", 1, {opacity: 0});
-var tween2 = TweenMax.from("#animateBGOne", 1, {opacity: 0});
-var tween3 = TweenMax.from("#animateBGTwo", 1, {opacity: 0});
+var tween1 = TweenMax.from("#animate", 0.5, {opacity: 0});
+var tween2 = TweenMax.from("#animateBGOne", 0.5, {opacity: 0});
+var tween3 = TweenMax.from("#animateBGTwo", 0.5, {opacity: 0});
 
 // build scene and set duration to window height
-var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "70%"})
+var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween1)
+  .addIndicators()
   .addTo(controller);
 
-var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "70%"})
+var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween2)
+  .addIndicators()
   .addTo(controller);
-var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "70%"})
+var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
   .setTween(tween3)
+  .addIndicators()
   .addTo(controller);
 
