@@ -79,17 +79,17 @@ main.home__block {
 }
 
 .first__content__block {
-  background: #1E1E7D;
+  background: #140D2B;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
   border-radius: 16px;
   position: relative;
-  padding-bottom: 466px;
+  padding-bottom: 70px;
   overflow: hidden;
 
   &-wrapper {
     position: relative;
-    z-index: 5;
+    z-index: 6;
     border-radius: 16px;
     padding: 0 146px;
   }
@@ -161,7 +161,7 @@ main.home__block {
     border-radius: 4px;
     padding: 12px 14px;
     display: block;
-    margin: 0 auto 20px auto;
+    margin: 0 auto 70px auto;
     width: fit-content;
     overflow: hidden;
     position: relative;
@@ -200,9 +200,31 @@ main.home__block {
   }
 
   &-img {
+    position: relative;
+    background: rgba(19, 13, 41, 0.9);
+    box-shadow: 0px 67.45px 88.75px 28.4px #140D2B;
+    backdrop-filter: blur(1.775px);
+
+    picture {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 5;
+      width: 80vw;
+
+      img {
+        width: inherit;
+      }
+    }
+  }
+
+  .noize__bg {
+    background: url("../../img/noize.png");
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, 0);
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    top: 0;
   }
 
   &-sphere__bg-one {
@@ -215,6 +237,7 @@ main.home__block {
     background-size: 925px 854px;
     filter: blur(156px);
     border-radius: 100%;
+    opacity: 0.5;
     z-index: 4;
 
     @media (max-width: 1100px) {
@@ -255,6 +278,19 @@ main.home__block {
     @media (max-width: 450px) {
       left: 160px;
     }
+  }
+
+  &-sphere__bg-three {
+    position: absolute;
+    width: 1263px;
+    height: 1253px;
+    left: -1169px;
+    top: 314px;
+    background: linear-gradient(180deg, #2F5AF2 0%, rgba(245, 138, 37, 0) 100%, #7061A3 100%);
+    mix-blend-mode: normal;
+    opacity: 0.6;
+    filter: blur(130px);
+    z-index: 4;
   }
 }
 
@@ -514,7 +550,6 @@ main.home__block {
 
 @media (max-width: 880px) {
   .first__content__block {
-    padding-bottom: 53%;
 
     &-img img {
       width: 142vw;
