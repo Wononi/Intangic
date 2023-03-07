@@ -210,7 +210,10 @@ main.home__block {
       left: 50%;
       transform: translate(-50%, 0);
       z-index: 5;
-      width: 80vw;
+      
+      @media (max-width: 1600px) {
+        width: 80vw;
+      }
 
       img {
         width: inherit;
@@ -544,16 +547,6 @@ main.home__block {
 
     p {
       font-size: 18px;
-    }
-  }
-}
-
-@media (max-width: 880px) {
-  .first__content__block {
-
-    &-img img {
-      width: 142vw;
-      object-fit: scale-down;
     }
   }
 }

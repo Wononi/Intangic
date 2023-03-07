@@ -668,8 +668,10 @@ main.home__block {
       position: absolute;
       left: 50%;
       transform: translate(-50%, 0);
-      z-index: 5;
-      width: 80vw; }
+      z-index: 5; }
+      @media (max-width: 1600px) {
+        .first__content__block-img picture {
+          width: 80vw; } }
       .first__content__block-img picture img {
         width: inherit; }
   .first__content__block .noize__bg {
@@ -907,10 +909,6 @@ main.home__block {
       font-size: 32px; }
     .second__content__block p {
       font-size: 18px; } }
-@media (max-width: 880px) {
-  .first__content__block-img img {
-    width: 142vw;
-    object-fit: scale-down; } }
 @media (max-width: 767px) {
   .welcome__block {
     margin-bottom: 61px; }
