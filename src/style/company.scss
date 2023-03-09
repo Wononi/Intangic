@@ -78,7 +78,7 @@
 
   .company__employees {
     &-founder {
-      margin: 0 200px 47px 200px;
+      margin: 0 153px 47px 153px;
       padding: 72px 80px;
       background: #27222A;
       border-radius: 16px;;
@@ -153,20 +153,24 @@
 
       &-wrapper {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        margin: 0 200px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin: 0 153px;
         grid-column-gap: 16px;
 
         &__item {
           background: #27222A;
           border-radius: 16px;
-          padding: 40px;
+          padding: 32px;
 
           &-info {
             display: flex;
             column-gap: 21px;
             align-items: center;
-            margin-bottom: 62px;
+            margin-bottom: 94px;
+            
+            @media (max-width: 1240px) {
+              align-items: flex-start;
+            }
 
             &__name {
               h4 {
@@ -197,7 +201,7 @@
             line-height: 140%;
             display: flex;
             align-items: flex-end;
-            color: #83848A;
+            color: #E7E8EE;
           }
         }
       }
@@ -221,7 +225,7 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 16px;
-        margin: 0 200px;
+        margin: 0 153px;
 
         &__item {
           background: #27222A;
@@ -258,7 +262,7 @@
             line-height: 140%;
             display: flex;
             align-items: flex-end;
-            color: #83848A;
+            color: #E7E8EE;
           }
         }
       }
@@ -270,7 +274,7 @@
   .company__block {
     .company__employees {
       &-founder {
-        margin: 0 90px 47px 90px;
+        margin: 0 70px 47px 70px;
       }
 
       &-executive__team {
@@ -344,6 +348,9 @@
 
         &-wrapper {
           margin: 0 10px;
+          grid-template-columns: 80%;
+          grid-row-gap: 16px;
+          justify-content: center;
         }
       }
 
@@ -381,7 +388,6 @@
 
         &-wrapper {
           grid-template-columns: 1fr;
-          grid-row-gap: 16px;
 
           &__item {
             padding: 20px;
