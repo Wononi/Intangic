@@ -280,7 +280,7 @@ main.home__block {
     top: 50%;
     background: linear-gradient(180deg, rgb(51 66 129 / 50%) 0%, rgb(182 145 91 / 50%) 100%);
     mix-blend-mode: normal;
-    transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0);
+    transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0) translate3d(0,0,0);
     background-size: 1868px 1505px;
     opacity: 0.6;
     filter: blur(130px) contrast(80%);
