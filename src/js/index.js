@@ -21,15 +21,16 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.navigation'))
 
-const imac = document.querySelector('.first__content__block-img picture')
-const imacWrapper = document.querySelector('.first__content__block-img')
-const getHeightPicture = () => {
-    return imac.clientHeight
+// const imac = document.querySelector('.first__content__block-img picture')
+// const imacWrapper = document.querySelector('.first__content__block-img')
+// const getHeightPicture = () => {
+//     return imac.clientHeight
+// }
+// setInterval(() => {
+//     imacWrapper.setAttribute('style', `height: ${getHeightPicture()}px`)
+// }, 100)
 
-}
-setInterval(() => {
-    imacWrapper.setAttribute('style', `height: ${getHeightPicture()}px`)
-}, 100)
+
 // анимация второго блока на главной странице
 var controller = new ScrollMagic.Controller();
 
