@@ -35,7 +35,7 @@ observer.observe(document.querySelector('.navigation'))
 var controller = new ScrollMagic.Controller();
 
 // build tween
-var tween1 = TweenMax.from("#animate", 0.5, {opacity: 0});
+var tween1 = TweenMax.from("#animate", 0.5, {opacity: 0.15});
 var tween2 = TweenMax.from("#animateBGOne", 0.5, {opacity: 0});
 var tween3 = TweenMax.from("#animateBGTwo", 0.5, {opacity: 0});
 

@@ -256,7 +256,7 @@ main.home__block {
     width: 860px;
     height: 471px;
     left: 50%;
-    transform: translate(-50%, 0) translate3d(0,0,0);
+    transform: translate(-50%, 0);
     top: -199px;
     z-index: 4;
     background: #B2A7D1;
@@ -274,7 +274,7 @@ main.home__block {
     background-size: 515px 1253px;
     mix-blend-mode: normal;
     filter: blur(130px) contrast(80%);
-    transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0) translate3d(0,0,0);
+    transform: matrix(1, 0, 0, -1, 0, 0) translate(-50%, 0);
   }
 
   &-sphere__bg-three {

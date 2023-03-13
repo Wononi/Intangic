@@ -223,9 +223,9 @@
 
       &-wrapper {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
         margin: 0 153px;
+        grid-column-gap: 16px;
 
         &__item {
           background: #27222A;
@@ -362,6 +362,9 @@
 
         &-wrapper {
           margin: 0 10px;
+          grid-template-columns: 80%;
+          grid-row-gap: 16px;
+          justify-content: center;
         }
       }
     }
