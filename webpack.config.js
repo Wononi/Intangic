@@ -49,7 +49,7 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
-            filename: './css/style.[contenthash].css'
+            filename: './css/style.css'
         }),
         new webpack.SourceMapDevToolPlugin({
             filename: '[file].map',

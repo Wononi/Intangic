@@ -1,13 +1,10 @@
-import { TimelineMax, TweenMax, Linear } from 'gsap';
-import ScrollMagic from 'scrollmagic';
+import { TweenMax } from 'gsap';
+import ScrollMagic from 'scrollmagic/scrollmagic/uncompressed/ScrollMagic';
 import 'scrollmagic/scrollmagic/uncompressed/plugins/debug.addIndicators'
 import 'scrollmagic/scrollmagic/uncompressed/plugins/animation.gsap'
 import './animate-block'
 import '../style/style.scss'
 
-// window.addEventListener('scroll', () => {
-//     document.querySelector('.sphere__background').style.transform = `scale(1.${pageYOffset / 100})`
-// })
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -21,33 +18,27 @@ const observer = new IntersectionObserver(entries => {
 
 observer.observe(document.querySelector('.navigation'))
 
-// const imac = document.querySelector('.first__content__block-img picture')
-// const imacWrapper = document.querySelector('.first__content__block-img')
-// const getHeightPicture = () => {
-//     return imac.clientHeight
-// }
-// setInterval(() => {
-//     imacWrapper.setAttribute('style', `height: ${getHeightPicture()}px`)
-// }, 100)
-
-
 // анимация второго блока на главной странице
-var controller = new ScrollMagic.Controller();
+const controller = new ScrollMagic.Controller();
+
 
 // build tween
-var tween1 = TweenMax.from("#animate", 0.5, {opacity: 0.15});
-var tween2 = TweenMax.from("#animateBGOne", 0.5, {opacity: 0});
-var tween3 = TweenMax.from("#animateBGTwo", 0.5, {opacity: 0});
+var tween = TweenMax.from("#animate", 1, {opacity: 0.15});
+var tween2 = TweenMax.from("#animateBGOne", 1, {opacity: 0});
+var tween3 = TweenMax.from("#animateBGTwo", 1, {opacity: 0});
 
 // build scene and set duration to window height
-var scene1 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
-  .setTween(tween1)
+var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "50%"})
+  .setTween(tween)
+  .addIndicators()
   .addTo(controller);
 
-var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
+var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
   .setTween(tween2)
-  .addTo(controller);
-var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "80%"})
-  .setTween(tween3)
+  .addIndicators()
   .addTo(controller);
 
+var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
+  .setTween(tween3)
+  .addIndicators()
+  .addTo(controller);
