@@ -19,26 +19,28 @@ const observer = new IntersectionObserver(entries => {
 observer.observe(document.querySelector('.navigation'))
 
 // анимация второго блока на главной странице
-const controller = new ScrollMagic.Controller();
+if (document.querySelector('#trigger')) {
+    debugger
+    const controller = new ScrollMagic.Controller();
 
 
 // build tween
-var tween = TweenMax.from("#animate", 1, {opacity: 0.15});
-var tween2 = TweenMax.from("#animateBGOne", 1, {opacity: 0});
-var tween3 = TweenMax.from("#animateBGTwo", 1, {opacity: 0});
+    var tween = TweenMax.from("#animate", 1, {opacity: 0.05});
+    var tween2 = TweenMax.from("#animateBGOne", 1, {opacity: 0});
+    var tween3 = TweenMax.from("#animateBGTwo", 1, {opacity: 0});
 
 // build scene and set duration to window height
-var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "50%"})
-  .setTween(tween)
-  .addIndicators()
-  .addTo(controller);
+    var scene = new ScrollMagic.Scene({triggerElement: "#trigger2", duration: "50%"})
+      .setTween(tween)
+      .addTo(controller);
 
-var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
-  .setTween(tween2)
-  .addIndicators()
-  .addTo(controller);
+    var scene2 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
+      .setTween(tween2)
+      .addTo(controller);
 
-var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
-  .setTween(tween3)
-  .addIndicators()
-  .addTo(controller);
+    var scene3 = new ScrollMagic.Scene({triggerElement: "#trigger", duration: "50%"})
+      .setTween(tween3)
+      .addTo(controller);
+}
+
+
